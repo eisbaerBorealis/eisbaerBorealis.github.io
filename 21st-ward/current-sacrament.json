@@ -1,0 +1,51 @@
+{
+    "header":
+    {
+        "wardInfo": "Provo Married Student 21st Ward",
+        "quote": "Saying, Father, if thou be willing, remove this cup from me; nevertheless not my will, but thine, be done. -Luke 22:42",
+        "date": "June 16, 2019",
+        "specialDay": "Happy Father's Day!"
+    },
+    "program":
+    [
+        {
+            "left": "Conducting",
+            "right": "Tanner Hardy"
+        },
+        {
+            "left": "Organist",
+            "right": "Jacob Nielson"
+        },
+        {
+            "left": "Chorister",
+            "right": "Makayla LaFond"
+        },
+        {
+            "Center": "Welcome"
+        },
+        {
+            "left": "Opening Hymn",
+            "right": "#136"
+        },
+        {
+            "center": "I Know That My Redeemer Lives"
+        },
+        {
+            "left": "Invocation",
+            "right": "Santiago Blanco"
+        },
+        {
+            "center": "Ward and Stake Business"
+        },
+        {
+            "center": "etc..."
+        },
+        {
+            "left": "Benediction",
+            "right": "Maryn Blanco"
+        },
+        {
+            "center": "(Second hour today will be Sunday School)"
+        }
+    ]
+}

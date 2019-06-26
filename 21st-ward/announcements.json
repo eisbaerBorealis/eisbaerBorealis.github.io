@@ -1,0 +1,46 @@
+{
+    "other":
+    [
+        {
+            "precursor": "If you are new to the ward",
+            "message": "please come to the new move-in meeting after church in the bishop's office in the SE corner of the building."
+        },
+        {
+            "precursor": "To schedule the building",
+            "message": "contact Cameron Moyle at ###-###-####."
+        },
+        {
+            "precursor": "For additional announcements and reminders throughout the week",
+            "message": "join the \"Members of the Provo Married Student 21st Ward\" Facebook page (see \"Leadership/Other Ward Info\" section)."
+        },
+        {
+            "precursor": "For appointments or ecclesiastical endorsements with the bishop or baby blessing info",
+            "message": "please contact Christoffer Loderup at ###-###-####."
+        },
+        {
+            "precursor": "To announce something in the program, contact Jeremy & Rebecca Jensen at ###-###-#### or _____@gmail.com",
+            "message": "please contact Christoffer Loderup at ###-###-####."
+        }
+    ],
+    "events":
+    [
+        {
+            "title": "Service Activity at Provo Nursing and Rehab",
+            "date": "Tuesday, June 25",
+            "time": "7:00 PM",
+            "location":
+            {
+                "name": "Provo Rehab and Nursing",
+                "address": "1001 N 500 W, Provo, UT 84604"
+            },
+            "info": "We will be visiting with old people, maybe games or activities, or just chatting."
+        },
+        {
+            "title": "Ward Barbacue",
+            "date": "July 13",
+            "time": "TBA",
+            "location": "TBA",
+            "info": "TBA"
+        }
+    ]
+}

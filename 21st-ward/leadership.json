@@ -1,0 +1,29 @@
+{
+    "leadership": [
+        {
+            "calling": "Bishop",
+            "name": "Bishop Johnson",
+            "phone": "###-###-####"
+        },
+        {
+            "calling": "First Counselor",
+            "name": "Bryce Caten",
+            "phone": "###-###-####"
+        },
+        {
+            "calling": "Second Counselor",
+            "name": "Tanner Hardy",
+            "phone": "###-###-####"
+        },
+        {
+            "calling": "Elder's Quorum President",
+            "name": "Matt Crowder",
+            "phone": "###-###-####"
+        },
+        {
+            "calling": "Relief Society President",
+            "name": "Sarah Rost",
+            "phone": "###-###-####"
+        }
+    ]
+}
