@@ -1,0 +1,121 @@
+/** Author: Jesse Howell
+ * 
+ *  For CS 2550 at UVU
+ */
+
+html
+{
+    background-color: #2f4f21;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+}
+
+body
+{
+    font-family: 'Nunito', sans-serif;
+    max-width: 600px;
+    width: auto;
+    margin: 0px auto;
+    background-color: #ffffff;
+    padding: 50px 100px;
+    height: auto;
+    border-radius: 50px;
+    flex-basis: 600px;
+}
+
+h1
+{
+    color: #38761d;
+    font-family: "Playfair Display", serif;
+    font-size: 18pt;
+    margin: 5px;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 12pt;
+    font-weight: normal;
+    font-family: "Playfair Display", serif;
+    margin: 5px;
+}
+
+h3
+{
+    color: #38761d;
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 10px 0px 1px 25px;
+}
+
+h5
+{
+    font-size: 8pt;
+    margin: 1px 0px;
+    font-weight: normal;
+}
+
+.clickable:hover
+{
+    cursor: pointer;
+}
+
+section
+{
+    margin-bottom: 0px;
+}
+
+ul
+{
+    margin: 5px 10px;
+    font-size: 11pt;
+    padding: 5px 5px 5px 25px;
+}
+
+p
+{
+    font-size: 10pt;
+    margin: 0px 25px;
+}
+
+.referenceContact
+{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.collapsible
+{
+    display: none;
+}
+
+.layer1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #f0f7ed;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px 0px;
+    height: auto;
+}
+
+.layer2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #e1f0db;
+    border-radius: 15px;
+    height: auto;
+    width: auto;
+}
+
+.hidden
+{
+    color: #f0f7ed;
+}
