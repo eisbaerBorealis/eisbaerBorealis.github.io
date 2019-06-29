@@ -18,8 +18,8 @@
             "message": "please contact Christoffer Loderup at ###-###-####."
         },
         {
-            "precursor": "To announce something in the program, contact Jeremy & Rebecca Jensen at ###-###-#### or _____@gmail.com",
-            "message": "please contact Christoffer Loderup at ###-###-####."
+            "precursor": "To announce something in the program",
+            "message": "contact Jeremy & Rebecca Jensen at ###-###-#### or _____@gmail.com."
         }
     ],
     "events":
@@ -39,7 +39,10 @@
             "title": "Ward Barbacue",
             "date": "July 13",
             "time": "TBA",
-            "location": "TBA",
+            "location":
+            {
+                "name": "TBA"
+            },
             "info": "TBA"
         }
     ]
