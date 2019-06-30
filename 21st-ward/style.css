@@ -119,3 +119,17 @@ p
 {
     color: #f0f7ed;
 }
+
+.center
+{
+    text-align: center;
+}
+
+.right
+{
+    text-align: right;
+}
+
+table{
+    width: 100%;
+}

@@ -1,6 +1,6 @@
 /** Author: Jesse Howell
  * 
- *  For CS 2550 at UVU
+ *  
  */
 
 var contentDivs = ['announcementsContent',
@@ -76,14 +76,11 @@ function displayAnnouncementsFromJSON(json)
 
     for(var event of json.events)
     {
-        // title, date, time, location, info
         announceHTML += '<h3 class="event">' + event.title +
         '</h3><ul class="eventDetails layer2">' + 
         '<li>Date: ' + event.date +
         '</li><li>Time: ' + event.time +
         '</li><li>Location: ' + event.location.name + '</li>';
-//console.log("DEBUG! event.location.name is " + event.location.name)
-//console.log("DEBUG! event.location is " + event.location)
 
         if(event.location.address != null)
         {
@@ -91,7 +88,7 @@ function displayAnnouncementsFromJSON(json)
         }
 
         announceHTML += '<li>Info: ' + event.info + '</li></ul>';
-    } //*/
+    }
 
     $('#announcementsContent').html(announceHTML);
 }
@@ -100,7 +97,26 @@ function displayCurrentSacramentFromJSON(json)
 {
     var announceHTML = '';
 
-    //  Add to HTML here
+    announceHTML += '<h2 class="center">' + json.header.wardInfo + '</h2>';
+    announceHTML += '<p class="center">' + json.header.quote + '</p>';
+    announceHTML += '<p class="center">' + json.header.date + '</p>';
+    announceHTML += '<p class="center">' + json.header.specialDay + '</p>';
+
+    announceHTML += '<table>';
+    for(var item of json.program)
+    {
+        announceHTML += '<tr>';
+        if(item.left != null)
+        {
+            announceHTML += '<td>' + item.left + '</td><td class="right">' + item.right + '</td>';
+        }
+        else
+        {
+            announceHTML += '<td colspan="2" class="center">' + item.center + '</td>';
+        }
+        announceHTML += '</tr>';
+    }
+    announceHTML += '</table>';
 
     $('#sacramentContent').html(announceHTML);
 }
