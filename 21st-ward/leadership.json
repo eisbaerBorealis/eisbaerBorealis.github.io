@@ -29,11 +29,11 @@
     ],
     "other":
         {
-            "curator-name": "Jesse Howell",
-            "curator-email": "eisbaer.borealis@gmail.com",
-            "facebook-title": "Members of Provo Married Student 21st Ward",
-            "facebook-url": "https://www.facebook.com/groups/Provomarriedstudent21stward/",
-            "facebook-qr": "images/qr-facebook.png",
-            "page-qr": "images/qr-home.png"
+            "curatorName": "Jesse Howell",
+            "curatorEmail": "eisbaer.borealis@gmail.com",
+            "facebookTitle": "Members of Provo Married Student 21st Ward",
+            "facebookUrl": "https://www.facebook.com/groups/Provomarriedstudent21stward/",
+            "facebookQr": "images/qr-facebook.png",
+            "pageQr": "images/qr-home.png"
         }
 }
