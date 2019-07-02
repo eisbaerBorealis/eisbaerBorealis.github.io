@@ -45,6 +45,13 @@ $(document).ready(function()
             sacrament = data;
             displayCurrentSacramentFromJSON(sacrament);
         });
+
+    $.getJSON('https://raw.githubusercontent.com/eisbaerBorealis/eisbaerBorealis.github.io/master/21st-ward/leadership.json',
+        function(data)
+        {
+            leadership = data;
+            displayLeadershipFromJSON(leadership);
+        });
 });
 
 function changeVisible(section)
@@ -119,6 +126,37 @@ function displayCurrentSacramentFromJSON(json)
     announceHTML += '</table>';
 
     $('#sacramentContent').html(announceHTML);
+}
+
+function displayLeadershipFromJSON(json)
+{
+    var leadershipHTML = '';
+
+    leadershipHTML += '<table>';
+    for(var leader of json.leadership)
+    {
+        leadershipHTML += '<tr><td>' + leader.calling + '</td><td>' + leader.name + '</td><td>' + leader.phone + '</td></tr>';
+    }
+    leadershipHTML += '</table>';
+
+    leadershipHTML += '<h2>Other Info:</h2>';
+
+    leadershipHTML += '<span class="center"><a href="' + json.other.facebookUrl + '">Facebook Page: ';
+    leadershipHTML += json.other.facebookTitle + '</a>';
+
+    leadershipHTML += '<p class="center">Facebook QR Code:</p><div class="center-image"><img src="';
+    leadershipHTML += json.other.facebookQr;
+    leadershipHTML += '" alt="QR code for Facebook group"></div>';
+
+    leadershipHTML += '<p class="center">QR Code for this page:</p><div class="center-image"><img class="center" src="';
+    leadershipHTML += json.other.pageQr;
+    leadershipHTML += '" alt="QR code for this page"></div>';
+
+    leadershipHTML += '<p>This page is being updated by ' + json.other.curatorName;
+    leadershipHTML += '. Please email ' + json.other.curatorEmail;
+    leadershipHTML += ' with questions, comments, requests, or suggestions.</p>';//*/
+
+    $('#leadershipContent').html(leadershipHTML);
 }
 
 /*function addTooltips()

@@ -130,6 +130,12 @@ p
     text-align: right;
 }
 
-table{
+table
+{
     width: 100%;
+}
+
+.center-image
+{
+    margin: 0px auto;
 }
