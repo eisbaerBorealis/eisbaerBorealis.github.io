@@ -2,19 +2,19 @@
     "header":
     {
         "wardInfo": "Provo Married Student 21st Ward",
-        "quote": "Saying, Father, if thou be willing, remove this cup from me; nevertheless not my will, but thine, be done. -Luke 22:42",
-        "date": "June 16, 2019",
-        "specialDay": "Happy Father's Day!"
+        "quote": "And they continued steadfastly in the apostles; doctrine and fellowship, and in breaking of bread, and in prayers. -Acts 2:42",
+        "date": "July 7, 2019",
+        "specialDay": ""
     },
     "program":
     [
         {
             "left": "Conducting",
-            "right": "Tanner Hardy"
+            "right": "Bryce Caten"
         },
         {
             "left": "Organist",
-            "right": "Jacob Nielson"
+            "right": "McKenzie Greenhalgh"
         },
         {
             "left": "Chorister",
@@ -25,24 +25,41 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#136"
+            "right": "#27"
         },
         {
-            "center": "I Know That My Redeemer Lives"
+            "center": "Praise to the Man"
         },
         {
             "left": "Invocation",
-            "right": "Santiago Blanco"
+            "right": "George McCann"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
-            "center": "etc..."
+            "left": "Sacrament Hymn",
+            "right": "#193"
+        },
+        {
+            "center": "I Stand All Amazed"
+        },
+        {
+            "center": "Administration of the Sacrament"
+        },
+        {
+            "center": "Bearing of Testimonies"
+        },
+        {
+            "left": "Closing Hymn",
+            "right": "#246"
+        },
+        {
+            "center": "Onward Christian Soldiers"
         },
         {
             "left": "Benediction",
-            "right": "Maryn Blanco"
+            "right": "Cassidy McCann"
         },
         {
             "center": "(Second hour today will be Sunday School)"

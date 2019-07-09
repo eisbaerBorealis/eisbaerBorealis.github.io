@@ -1,0 +1,83 @@
+{
+    "June 30, 2019":
+    {
+        "header":
+        {
+            "wardInfo": "Provo Married Student 21st Ward",
+            "quote": "Behold my hands and my feet, that it is I myself: handle me, and see; for a spirit hath not flesh and bones, as ye see me have. -Luke 24:39",
+            "date": "June 30, 2019",
+            "specialDay": ""
+        },
+        "program":
+        [
+            {
+                "left": "Conducting",
+                "right": "Tanner Hardy"
+            },
+            {
+                "left": "Organist",
+                "right": "Jacob Nielson"
+            },
+            {
+                "left": "Chorister",
+                "right": "Emory Wride"
+            },
+            {
+                "center": "Welcome"
+            },
+            {
+                "left": "Opening Hymn",
+                "right": "#340"
+            },
+            {
+                "center": "The Star-Spangled Banner"
+            },
+            {
+                "left": "Invocation",
+                "right": "TBA"
+            },
+            {
+                "center": "Ward and Stake Business"
+            },
+            {
+                "left": "Sacrament Hymn",
+                "right": "#182"
+            },
+            {
+                "center": "We'll Sing All Hail to Jesus' Name"
+            },
+            {
+                "center": "Administration of the Sacrament"
+            },
+            {
+                "left": "Speaker",
+                "right": "Jesse LaFond"
+            },
+            {
+                "left": "Intermediate Hymn",
+                "right": "#338"
+            },
+            {
+                "center": "America the Beautiful"
+            },
+            {
+                "left": "Speaker",
+                "right": "Makayla LaFond"
+            },
+            {
+                "left": "Closing Hymn",
+                "right": "#339"
+            },
+            {
+                "center": "My Country, Tis of Thee"
+            },
+            {
+                "left": "Benediction",
+                "right": "TBA"
+            },
+            {
+                "center": "(Second hour today will be combined financial fireside with Bishop Johnson)"
+            }
+        ]
+    }
+}

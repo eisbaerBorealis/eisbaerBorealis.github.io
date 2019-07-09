@@ -1,0 +1,50 @@
+{
+    "spotlights":
+    [
+        {
+            "name": "Steven and Lauren Brown",
+            "photo": "brown_sl.png",
+            "description":
+            [
+                "Hi, our names are Steven and Lauren Brown. We think that we're pretty cool, but if you don't believe us, read the sweet haiku's Steven wrote about us and decide for yourself.",
+                "Steven is nice,",
+                "He likes to talk and play games,",
+                "Need a friend? Find him.",
+                "Lauren is perfect,",
+                "She's smart, kind, and beautiful,",
+                "Steven wrote this poem.",
+                "But seriously, if you like to play games, watch movies, read, eat tasty food/treats, need some extra benchwarmers on your team, or need someone to send your cat videos to, come find us!  Lauren is almost halfway through  her Masters of English degree at BYU, and Steven works at a startup here in Provo, so we will be around for a while. We're both local to Utah and like to hike, camp, and go on walks around town. Some of our favorite memories of the last three years we've been married have been made while we have been travelling, something we do as often as we can. Our favorite trips have been to parts of Europe, and to some of the National Parks around here. We are looking forward to seeing Japan early this summer. If anything that we mentioned sounds interesting to you, come find us, we love meeting new people!"
+            ]
+        },
+        {
+            "name": "Jesse and Colby Howell",
+            "photo": "howell_jc.png",
+            "description":
+            [
+                "We’re Colby and Jesse Howell.  From the coasts of Southern California and Northern Alaska we came together in good old Provo, Utah.",
+                "When we’re not having fun with nursing home residents or cooking pizza at work, we like to study and run around town.  Colby is studying Therapeutic Recreation Management and Gerontology at BYU and Jesse is studying Computer Science at UVU.  Our go-to hang out spots when we leave the house are the Smiths grocery store and the Provo Temple.",
+                "Colby likes to cook and make little pieces of art, so if you ever need some comfort food or want to have some fun crafting- hit her up!  Jesse likes to ride his bike and compile lists of things he would like to do someday.",
+                "We’d love to share our little apartment, our time, our games, and our chocolate fountain with you, so let us know if you’re craving chocolate or attention and we’ll see what we can do! We’re also called as the new bulletin board managers, so we want to get to know you and show off your cute family on this board too."
+            ]
+        },
+        {
+            "name": "Jeffrey and Rebecca Jensen",
+            "photo": "jensen_jr.jpg",
+            "description":
+            [
+                "paragraph 1",
+                "paragraph 2",
+                "paragraph 3"
+            ]
+        },
+        {
+            "name": "Carly and Landen Johnson",
+            "photo": "johnson_lc.jpg",
+            "description":
+            [
+                "Carly & Landen Johnson, from Pleasant Grove, met in a middle school summer percussion course and were friends ever since.  They shared their first kiss at their Senior Prom, and during Landen’s mission to Norway the couple wrote to each other every week.  Once reunited, Carly and Landen began dating again and have now shared a little over two years of marriage.",
+                "Both are studying at BYU- Landen is working on undergraduate work in Geology where he is inspired by passionate professors, and Carly is pursuing the arts while working on a Bachelor’s degree in Art History.  The couple enjoys playing board games so hit them up if you have got an interesting game to share.  If you feel so inclined, you could pop by with some snickerdoodle or chocolate chip cookies and they would happily help you to clear the plate."
+            ]
+        }
+    ]
+}
