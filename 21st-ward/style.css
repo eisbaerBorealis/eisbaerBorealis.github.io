@@ -48,7 +48,7 @@ h3
     color: #38761d;
     font-size: 11pt;
     font-weight: bold;
-    margin: 10px 0px 1px 25px;
+    margin: 10px 0px 5px 25px;
 }
 
 h5
@@ -113,6 +113,7 @@ p
     border-radius: 15px;
     height: auto;
     width: auto;
+    margin-bottom: 5px;
 }
 
 .hidden
@@ -132,10 +133,22 @@ p
 
 table
 {
-    width: 100%;
+    width: 80%;
+    margin: 0px auto;
 }
 
 .center-image
 {
     margin: 0px auto;
 }
+
+img
+{
+    max-width: 300px;
+    margin: 0px auto;
+}
+
+/*.spotlights
+{
+    margin: 5px;
+}*/

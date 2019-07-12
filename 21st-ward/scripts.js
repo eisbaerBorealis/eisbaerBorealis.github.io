@@ -9,6 +9,8 @@ var contentDivs = ['announcementsContent',
                     'spotlightsContent',
                     'archivesContent'];
 
+var spotlightNames = [];
+
 $(document).ready(function()
 {
     $('.clickable').eq(0).on('click', function(event)
@@ -51,6 +53,13 @@ $(document).ready(function()
         {
             leadership = data;
             displayLeadershipFromJSON(leadership);
+        });
+
+    $.getJSON('https://raw.githubusercontent.com/eisbaerBorealis/eisbaerBorealis.github.io/master/21st-ward/spotlights.json',
+        function(data)
+        {
+            spotlights = data;
+            displaySpotlightsFromJSON(spotlights);
         });
 });
 
@@ -107,7 +116,10 @@ function displayCurrentSacramentFromJSON(json)
     announceHTML += '<h2 class="center">' + json.header.wardInfo + '</h2>';
     announceHTML += '<p class="center">' + json.header.quote + '</p>';
     announceHTML += '<p class="center">' + json.header.date + '</p>';
-    announceHTML += '<p class="center">' + json.header.specialDay + '</p>';
+    if(json.header.specialDay != "")
+    {
+        announceHTML += '<p class="center">' + json.header.specialDay + '</p>';
+    }
 
     announceHTML += '<table>';
     for(var item of json.program)
@@ -142,7 +154,7 @@ function displayLeadershipFromJSON(json)
     leadershipHTML += '<h2>Other Info:</h2>';
 
     leadershipHTML += '<span class="center"><a href="' + json.other.facebookUrl + '">Facebook Page: ';
-    leadershipHTML += json.other.facebookTitle + '</a>';
+    leadershipHTML += json.other.facebookTitle + '</a>'; // </span>
 
     leadershipHTML += '<p class="center">Facebook QR Code:</p><div class="center-image"><img src="';
     leadershipHTML += json.other.facebookQr;
@@ -157,6 +169,84 @@ function displayLeadershipFromJSON(json)
     leadershipHTML += ' with questions, comments, requests, or suggestions.</p>';//*/
 
     $('#leadershipContent').html(leadershipHTML);
+}
+
+function displaySpotlightsFromJSON(json)
+{
+    var spotlightsHTML = '';
+
+    var spotlightID = 0;
+    for(var couple of json.spotlights)
+    {
+//        announceHTML += '<h3 class="event">' + event.title +
+//        '</h3><ul class="eventDetails layer2">' + 
+        spotlightsHTML += '<section id="spotlight' + spotlightID + '" class="layer2">';
+//        spotlightsHTML += '<h3 class="spotlight layer2" id="spotlight' + spotlightID + '">' + couple.name + '</h3>' +
+//                        '<div>';
+        spotlightsHTML += '<h3 class="clickable">' + couple.name + '</h3>';
+        //<div id="sacramentContent" class="collapsible"></div>
+        spotlightsHTML += '<div id="spotlight' + spotlightID + 'Content" class="collapsible">';
+        spotlightsHTML += '<span class="center"><img src="images/spotlights/' + couple.photo;
+        spotlightsHTML += '" alt="Photo for ' + couple.name + '">';
+//TODO Add paragraphs
+        spotlightsHTML += '</div></section>';
+        spotlightID++;
+    }
+
+    var maxSpotlightID = spotlightID;
+
+    $('#spotlightsContent').html(spotlightsHTML);
+
+    spotlightID = 0;
+/*    for(var header of $('.spotlight'))
+    {
+        header.on('click', function(event)
+        {
+//            changeVisible('announcementsContent');
+            $('#spotlight' + spotlightID).slideToggle('slow');
+            console.log('DEBUG: spotlight' + spotlightID + ' was clicked and toggled.');
+        });
+    }//*/
+
+    while(spotlightID < maxSpotlightID)
+    {
+/*        $('.spotlight').eq(spotlightID).on('click', function(event)
+        {
+            $('#spotlight' + spotlightID).slideToggle('slow');
+//            toggleSpotlight('spotlight' + spotlightID);
+            console.log('DEBUG: spotlight' + spotlightID + ' was clicked and toggled.');
+        });//*/
+        $('#spotlight' + spotlightID).on('click', function(event)
+        {
+            $('#spotlight' + spotlightID + 'Content').slideToggle('slow');
+            console.log('DEBUG: spotlight' + spotlightID + ' was clicked and toggled.');
+        });
+        console.log('DEBUG: spotlight' + spotlightID + ' was theoretically clickified.');
+
+        spotlightID++;
+    }
+    spotlightID = 0;
+
+
+
+/*    $('.clickable').eq(0).on('click', function(event)
+    {
+        changeVisible('announcementsContent');
+    });
+    if(div !== section)
+        {
+            $('#' + div).slideUp('slow');
+        }
+        else
+        {
+            $('#' + div).slideToggle('slow');
+        }//*/
+
+}
+
+function toggleSpotlight(section)
+{
+    $('#' + section).slideToggle('slow');
 }
 
 /*function addTooltips()
