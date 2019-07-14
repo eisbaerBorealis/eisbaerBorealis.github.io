@@ -9,8 +9,6 @@ var contentDivs = ['announcementsContent',
                     'spotlightsContent',
                     'archivesContent'];
 
-var spotlightNames = [];
-
 $(document).ready(function()
 {
     $('.clickable').eq(0).on('click', function(event)
@@ -178,13 +176,8 @@ function displaySpotlightsFromJSON(json)
     var spotlightID = 0;
     for(var couple of json.spotlights)
     {
-//        announceHTML += '<h3 class="event">' + event.title +
-//        '</h3><ul class="eventDetails layer2">' + 
         spotlightsHTML += '<section id="spotlight' + spotlightID + '" class="layer2">';
-//        spotlightsHTML += '<h3 class="spotlight layer2" id="spotlight' + spotlightID + '">' + couple.name + '</h3>' +
-//                        '<div>';
         spotlightsHTML += '<h3 class="clickable">' + couple.name + '</h3>';
-        //<div id="sacramentContent" class="collapsible"></div>
         spotlightsHTML += '<div id="spotlight' + spotlightID + 'Content" class="collapsible">';
         spotlightsHTML += '<span class="center"><img src="images/spotlights/' + couple.photo;
         spotlightsHTML += '" alt="Photo for ' + couple.name + '">';
@@ -198,50 +191,16 @@ function displaySpotlightsFromJSON(json)
     $('#spotlightsContent').html(spotlightsHTML);
 
     spotlightID = 0;
-/*    for(var header of $('.spotlight'))
-    {
-        header.on('click', function(event)
-        {
-//            changeVisible('announcementsContent');
-            $('#spotlight' + spotlightID).slideToggle('slow');
-            console.log('DEBUG: spotlight' + spotlightID + ' was clicked and toggled.');
-        });
-    }//*/
 
     while(spotlightID < maxSpotlightID)
     {
-/*        $('.spotlight').eq(spotlightID).on('click', function(event)
-        {
-            $('#spotlight' + spotlightID).slideToggle('slow');
-//            toggleSpotlight('spotlight' + spotlightID);
-            console.log('DEBUG: spotlight' + spotlightID + ' was clicked and toggled.');
-        });//*/
         $('#spotlight' + spotlightID).on('click', function(event)
         {
-            $('#spotlight' + spotlightID + 'Content').slideToggle('slow');
-            console.log('DEBUG: spotlight' + spotlightID + ' was clicked and toggled.');
+            $('#' + this.id + 'Content').slideToggle('slow');
         });
-        console.log('DEBUG: spotlight' + spotlightID + ' was theoretically clickified.');
 
         spotlightID++;
     }
-    spotlightID = 0;
-
-
-
-/*    $('.clickable').eq(0).on('click', function(event)
-    {
-        changeVisible('announcementsContent');
-    });
-    if(div !== section)
-        {
-            $('#' + div).slideUp('slow');
-        }
-        else
-        {
-            $('#' + div).slideToggle('slow');
-        }//*/
-
 }
 
 function toggleSpotlight(section)
