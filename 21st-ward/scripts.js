@@ -180,8 +180,14 @@ function displaySpotlightsFromJSON(json)
         spotlightsHTML += '<h3 class="clickable">' + couple.name + '</h3>';
         spotlightsHTML += '<div id="spotlight' + spotlightID + 'Content" class="collapsible">';
         spotlightsHTML += '<span class="center"><img src="images/spotlights/' + couple.photo;
-        spotlightsHTML += '" alt="Photo for ' + couple.name + '">';
-//TODO Add paragraphs
+        spotlightsHTML += '" alt="Photo for ' + couple.name + '"></span>';
+// TODO Add paragraphs
+
+        for(var paragraph of couple.description)
+        {
+            spotlightsHTML += '<p>' + paragraph + "</p>";
+        }
+
         spotlightsHTML += '</div></section>';
         spotlightID++;
     }
