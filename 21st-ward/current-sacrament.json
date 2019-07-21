@@ -3,7 +3,7 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "And they continued steadfastly in the apostles; doctrine and fellowship, and in breaking of bread, and in prayers. -Acts 2:42",
-        "date": "July 7, 2019",
+        "date": "July 21, 2019",
         "specialDay": ""
     },
     "program":
@@ -25,41 +25,46 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#27"
+            "right": "#81"
         },
         {
-            "center": "Praise to the Man"
+            "center": "Press Forward, Saints"
         },
         {
             "left": "Invocation",
-            "right": "George McCann"
+            "right": "TBA"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#193"
+            "right": "#171"
         },
         {
-            "center": "I Stand All Amazed"
+            "center": "With Humble Heart"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "center": "Bearing of Testimonies"
+            "left": "Speaker",
+            "right": "TBA"
+        },
+        {
+            "left": "Speaker",
+            "right": "TBA"
         },
         {
             "left": "Closing Hymn",
-            "right": "#246"
+            "right": "#60"
         },
         {
-            "center": "Onward Christian Soldiers"
+            "center": "Battle Hymn of the Republic"
         },
         {
             "left": "Benediction",
-            "right": "Cassidy McCann"
+            "right": "TBA"
         },
         {
             "center": "(Second hour today will be Sunday School)"

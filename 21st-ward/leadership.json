@@ -34,6 +34,7 @@
             "facebookTitle": "Members of Provo Married Student 21st Ward",
             "facebookUrl": "https://www.facebook.com/groups/Provomarriedstudent21stward/",
             "facebookQr": "images/qr-facebook.png",
-            "pageQr": "images/qr-home.png"
+            "pageQr": "images/qr-home.png",
+            "pageBitly": "http://bit.ly/21stwardpage"
         }
 }

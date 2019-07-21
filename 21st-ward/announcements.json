@@ -25,25 +25,14 @@
     "events":
     [
         {
-            "title": "Service Activity at Provo Nursing and Rehab",
-            "date": "Tuesday, June 25",
-            "time": "7:00 PM",
+            "title": "Relief Society Activity for Moms and Baby Lovers ",
+            "date": "Tuesday, July 23",
+            "time": "6:00 PM",
             "location":
             {
-                "name": "Provo Rehab and Nursing",
-                "address": "1001 N 500 W, Provo, UT 84604"
+                "address": "60 W 800 N, Provo"
             },
-            "info": "We will be visiting with old people, maybe games or activities, or just chatting."
-        },
-        {
-            "title": "Ward Barbacue",
-            "date": "July 13",
-            "time": "TBA",
-            "location":
-            {
-                "name": "TBA"
-            },
-            "info": "TBA"
+            "info": "Bring your kiddos if you have them! Snacks provided."
         }
     ]
 }
