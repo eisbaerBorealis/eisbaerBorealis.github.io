@@ -93,12 +93,16 @@ function displayAnnouncementsFromJSON(json)
         announceHTML += '<h3 class="event">' + event.title +
         '</h3><ul class="eventDetails layer2">' + 
         '<li>Date: ' + event.date +
-        '</li><li>Time: ' + event.time +
-        '</li><li>Location: ' + event.location.name + '</li>';
+        '</li><li>Time: ' + event.time + '</li>';
+
+        if(event.location.name != null)
+        {
+            announceHTML += '<li>Location: ' + event.location.name + '</li>';
+        }
 
         if(event.location.address != null)
         {
-            announceHTML += '<li>Address: ' + event.location.address + '</li>'
+            announceHTML += '<li>Address: ' + event.location.address + '</li>';
         }
 
         announceHTML += '<li>Info: ' + event.info + '</li></ul>';
