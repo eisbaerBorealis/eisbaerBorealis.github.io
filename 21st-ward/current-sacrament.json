@@ -2,8 +2,8 @@
     "header":
     {
         "wardInfo": "Provo Married Student 21st Ward",
-        "quote": "And the voice spake unto him again the second time, what God hath cleansed, that call not thou common. -Acts 10:15",
-        "date": "July 21, 2019",
+        "quote": "Forasmuch then as we are the offspring of God, we ought not to think that the Godhead is like unto gold, or silver, or stone, graven by art and man's device. -Acts 17:29",
+        "date": "July 28, 2019",
         "specialDay": ""
     },
     "program":
@@ -25,49 +25,53 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#81"
+            "right": "#2"
         },
         {
-            "center": "Press Forward, Saints"
+            "center": "The Spirit of God"
         },
         {
             "left": "Invocation",
-            "right": "Zach Clement"
+            "right": "TBA"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#171"
+            "right": "#185"
         },
         {
-            "center": "With Humble Heart"
+            "center": "Reverently and Meekly Now"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
             "left": "Speaker",
-            "right": "Madison Truman"
+            "right": "TBA"
+        },
+        {
+            "left": "Special Musical Number",
+            "right": "Chris and Chalise Loderup"
         },
         {
             "left": "Speaker",
-            "right": "Foster Truman"
+            "right": "TBA"
         },
         {
             "left": "Closing Hymn",
-            "right": "#60"
+            "right": "#274"
         },
         {
-            "center": "Battle Hymn of the Republic"
+            "center": "The Iron Rod"
         },
         {
             "left": "Benediction",
-            "right": "McKenna Clement"
+            "right": "TBA"
         },
         {
-            "center": "(Second hour today will be Sunday School)"
+            "center": "(Second hour today will be Priesthood and Relief Society)"
         }
     ]
 }
