@@ -25,14 +25,15 @@
     "events":
     [
         {
-            "title": "Relief Society Activity for Moms and Baby Lovers ",
-            "date": "Tuesday, July 23",
-            "time": "6:00 PM",
+            "title": "Family History Pizza Night",
+            "date": "Wednesday, July 31",
+            "time": "7:00 PM",
             "location":
             {
-                "address": "60 W 800 N, Provo"
+                "name": "Ward Building",
+                "address": "1021 S 500 W, Provo, UT 84604"
             },
-            "info": "Bring your kiddos if you have them! Snacks provided."
+            "info": "Come enjoy pizza as you work on your family history. The family history consultants will be there to answer questions and help you find temple names for the ward temple trip in August."
         }
     ]
 }
