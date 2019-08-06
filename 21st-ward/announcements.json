@@ -25,8 +25,18 @@
     "events":
     [
         {
+            "title": "Cookie Walk",
+            "date": "Sunday, August 18",
+            "time": "6:30 pm",
+            "location":
+            {
+                "name": "TBA"
+            },
+            "info": "TBA"
+        },
+        {
             "title": "Ward Campout/\"Bondfire\"",
-            "date": "Fri-Sat, Sept 6-7",
+            "date": "Fri-Sat, September 6-7",
             "time": "TBA",
             "location":
             {
