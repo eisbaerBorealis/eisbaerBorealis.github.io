@@ -2,8 +2,8 @@
     "header":
     {
         "wardInfo": "Provo Married Student 21st Ward",
-        "quote": "Forasmuch then as we are the offspring of God, we ought not to think that the Godhead is like unto gold, or silver, or stone, graven by art and man's device. -Acts 17:29",
-        "date": "August 4, 2019",
+        "quote": "For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek. -Romans 1:16",
+        "date": "August 11, 2019",
         "specialDay": ""
     },
     "program":
@@ -25,44 +25,49 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#26"
+            "right": "#7"
         },
         {
-            "center": "Joseph Smith's First Prayer"
+            "center": "Israel, Israel, God is Calling"
         },
         {
             "left": "Invocation",
-            "right": "Foster Truman"
+            "right": "Preston Taylor"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#171"
+            "right": "#177"
         },
         {
-            "center": "With Humble Heart"
+            "center": "'Tis Sweet to Sing the Matchless Love"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "center": "Bearing of Testimonies"
+            "left": "Speaker",
+            "right": "Hannah Christensen"
+        },
+        {
+            "left": "Speaker",
+            "right": "Trevor Christensen"
         },
         {
             "left": "Closing Hymn",
-            "right": "#284"
+            "right": "#142"
         },
         {
-            "center": "If You Could Hie to Kolob"
+            "center": "Sweet Hour of Prayer"
         },
         {
             "left": "Benediction",
-            "right": "Madison Truman"
+            "right": "Emily Taylor"
         },
         {
-            "center": "(Second hour today will be Sunday School)"
+            "center": "(Second hour today will be Priesthood and Relief Society)"
         }
     ]
 }
