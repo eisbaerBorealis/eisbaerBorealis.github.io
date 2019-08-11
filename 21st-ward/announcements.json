@@ -25,6 +25,16 @@
     "events":
     [
         {
+            "title": "Choir Practice",
+            "date": "Sundays",
+            "time": "11:10 am",
+            "location":
+            {
+                "name": "South primary room"
+            },
+            "info": "We are planning on doing a musical number at the end of August."
+        },
+        {
             "title": "Cookie Walk",
             "date": "Sunday, August 18",
             "time": "6:30 pm",
