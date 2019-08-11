@@ -40,17 +40,19 @@
             "time": "6:30 pm",
             "location":
             {
-                "name": "TBA"
+                "name": "Joaquin Park",
+                "address": "378 N 400 E, Provo"
             },
-            "info": "TBA"
+            "info": "Please bake a batch of your favorite cookies to bring!"
         },
         {
-            "title": "Ward Campout/\"Bondfire\"",
-            "date": "Fri-Sat, September 6-7",
-            "time": "TBA",
+            "title": "Taco Truck",
+            "date": "Friday, September 6",
+            "time": "6:00 pm",
             "location":
             {
-                "name": "TBA"
+                "name": "Church Pavillion",
+                "address": "1021 S 500 W, Provo"
             },
             "info": "TBA"
         }
