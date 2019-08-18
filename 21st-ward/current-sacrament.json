@@ -2,7 +2,7 @@
     "header":
     {
         "wardInfo": "Provo Married Student 21st Ward",
-        "quote": "For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek. -Romans 1:16",
+        "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
         "date": "August 18, 2019",
         "specialDay": ""
     },
@@ -25,24 +25,24 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#TBA"
+            "right": "#134"
         },
         {
-            "center": "TBA"
+            "center": "I Believe in Christ"
         },
         {
             "left": "Invocation",
-            "right": "TBA"
+            "right": "Juliana Cox"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#TBA"
+            "right": "#194"
         },
         {
-            "center": "TBA"
+            "center": "There is a Green Hill Far Away"
         },
         {
             "center": "Administration of the Sacrament"
@@ -57,17 +57,17 @@
         },
         {
             "left": "Closing Hymn",
-            "right": "#TBA"
+            "right": "#230"
         },
         {
-            "center": "TBA"
+            "center": "Scatter Sunshine"
         },
         {
             "left": "Benediction",
-            "right": "TBA"
+            "right": "Daniel Coc"
         },
         {
-            "center": "(Second hour today will be Priesthood and Relief Society)"
+            "center": "(Second hour today will be Sunday School)"
         }
     ]
 }
