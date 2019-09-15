@@ -3,7 +3,7 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "September 8, 2019",
+        "date": "September 15, 2019",
         "specialDay": ""
     },
     "program":
@@ -29,49 +29,49 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#5"
+            "right": "#98"
         },
         {
-            "center": "High on the Mountain Top"
+            "center": "I Need Thee Every Hour"
         },
         {
             "left": "Invocation",
-            "right": "Michael Sosa"
+            "right": "Ryan Stenquist"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#170"
+            "right": "#188"
         },
         {
-            "center": "God, Our Father, Hear Us Pray"
+            "center": "Thy Will, O Lord, Be Done"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
             "left": "Speaker",
-            "right": "Juan Saenz"
+            "right": "Amanda Everson"
         },
         {
             "left": "Speaker",
-            "right": "Rebecca Saenz"
+            "right": "Daniel Everson"
         },
         {
             "left": "Closing Hymn",
-            "right": "#147"
+            "right": "#143"
         },
         {
-            "center": "Sweet is the Work"
+            "center": "Let the Holy Spirit Guide"
         },
         {
             "left": "Benediction",
-            "right": "Ashton Sosa"
+            "right": "Jennifer Stenquist "
         },
         {
-            "center": "(Second hour today will be Priesthood and Relief Society)"
+            "center": "(Second hour today will be Sunday School)"
         }
     ]
 }
