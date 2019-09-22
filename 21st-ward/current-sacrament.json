@@ -3,7 +3,7 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "September 15, 2019",
+        "date": "September 22, 2019",
         "specialDay": ""
     },
     "program":
@@ -29,49 +29,53 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#98"
+            "right": "#249"
         },
         {
-            "center": "I Need Thee Every Hour"
+            "center": "Called to Serve"
         },
         {
             "left": "Invocation",
-            "right": "Ryan Stenquist"
+            "right": "Kang-Won Suh"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#188"
+            "right": "#175"
         },
         {
-            "center": "Thy Will, O Lord, Be Done"
+            "center": "O God, the Eternal Father"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
             "left": "Speaker",
-            "right": "Amanda Everson"
+            "right": "Johanna Call"
+        },
+        {
+            "left": "Musical Number",
+            "right": "Sierra and Ben Smith"
         },
         {
             "left": "Speaker",
-            "right": "Daniel Everson"
+            "right": "Daniel Call"
         },
         {
             "left": "Closing Hymn",
-            "right": "#143"
+            "right": "#270"
         },
         {
-            "center": "Let the Holy Spirit Guide"
+            "center": "I'll Go Where You Want Me to Go"
         },
         {
             "left": "Benediction",
-            "right": "Jennifer Stenquist "
+            "right": "Jihyun Lee "
         },
         {
-            "center": "(Second hour today will be Sunday School)"
+            "center": "(Second hour today will be Priesthood and Relief Society)"
         }
     ]
 }
