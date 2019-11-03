@@ -3,14 +3,14 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "October 27, 2019",
+        "date": "November 3, 2019",
         "specialDay": ""
     },
     "program":
     [
         {
             "left": "Conducting",
-            "right": "Bishop Johnson"
+            "right": "Bryce Caten"
         },
         {
             "left": "Presiding",
@@ -29,53 +29,44 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#85"
+            "right": "#2"
         },
         {
-            "center": "How Firm a Foundation"
+            "center": "The Spirit of God"
         },
         {
             "left": "Invocation",
-            "right": "Ryan Evans"
+            "right": "Tanner Hardy"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#193"
+            "right": "#172"
         },
         {
-            "center": "I Stand All Amazed"
+            "center": "In Humility, Our Savior"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "left": "Speaker",
-            "right": "Lindsay Porter"
-        },
-        {
-            "left": "Musical Number",
-            "right": "Ward Choir"
-        },
-        {
-            "left": "Speaker",
-            "right": "Austin Porter"
+            "center": "Bearing of Testimonies"
         },
         {
             "left": "Closing Hymn",
-            "right": "#300"
+            "right": "#138"
         },
         {
-            "center": "Familes Can Be Together Forever"
+            "center": "Bless Our Fast, We Pray"
         },
         {
             "left": "Benediction",
-            "right": "Camille Johnson "
+            "right": "Gracee Hardy"
         },
         {
-            "center": "(Second hour today will be Priesthood and Relief Society)"
+            "center": "(Second hour today will be Sunday School)"
         }
     ]
 }
