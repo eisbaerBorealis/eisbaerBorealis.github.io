@@ -3,7 +3,7 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "November 3, 2019",
+        "date": "November 10, 2019",
         "specialDay": ""
     },
     "program":
@@ -18,55 +18,60 @@
         },
         {
             "left": "Organist",
-            "right": "Daniel Call"
+            "right": "Alexander Ray"
         },
         {
             "left": "Chorister",
-            "right": "Emory Wride"
+            "right": "Makayla LaFond"
         },
         {
             "center": "Welcome"
         },
         {
             "left": "Opening Hymn",
-            "right": "#2"
+            "right": "#294"
         },
         {
-            "center": "The Spirit of God"
+            "center": "Love at Home"
         },
         {
             "left": "Invocation",
-            "right": "Tanner Hardy"
+            "right": "Jessica Hyde"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#172"
+            "right": "#173"
         },
         {
-            "center": "In Humility, Our Savior"
+            "center": "While of These Emblems We Partake"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "center": "Bearing of Testimonies"
+            "left": "Speaker",
+            "right": "Bishop Johnson"
+        },
+        {
+            "left": "Speaker",
+            "right": "President Weight"
         },
         {
             "left": "Closing Hymn",
-            "right": "#138"
+            "right": "#298"
         },
         {
-            "center": "Bless Our Fast, We Pray"
+            "center": "Home can be a Heavan on Earth"
         },
         {
             "left": "Benediction",
-            "right": "Gracee Hardy"
+            "right": "Cade Hyde"
         },
         {
-            "center": "(Second hour today will be Sunday School)"
+            "center": "(Second hour today will be Priesthood and Relief Society)"
         }
     ]
 }
