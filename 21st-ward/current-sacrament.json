@@ -3,8 +3,8 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "November 10, 2019",
-        "specialDay": ""
+        "date": "December 1, 2019",
+        "specialDay": "Fast and Testimony Meeting"
     },
     "program":
     [
@@ -18,60 +18,55 @@
         },
         {
             "left": "Organist",
-            "right": "Alexander Ray"
+            "right": "Daniel Call"
         },
         {
             "left": "Chorister",
-            "right": "Makayla LaFond"
+            "right": "Gracee Hardy"
         },
         {
             "center": "Welcome"
         },
         {
             "left": "Opening Hymn",
-            "right": "#294"
+            "right": "#86"
         },
         {
-            "center": "Love at Home"
+            "center": "How Great Thou Art"
         },
         {
             "left": "Invocation",
-            "right": "Jessica Hyde"
+            "right": "Carly Johnson"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#173"
+            "right": "#196"
         },
         {
-            "center": "While of These Emblems We Partake"
+            "center": "Jesus Once of Humble Birth"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "left": "Speaker",
-            "right": "Bishop Johnson"
-        },
-        {
-            "left": "Speaker",
-            "right": "President Weight"
+            "center": "Bearing of Testimonies"
         },
         {
             "left": "Closing Hymn",
-            "right": "#298"
+            "right": "#210"
         },
         {
-            "center": "Home can be a Heavan on Earth"
+            "center": "With Wondering Awe"
         },
         {
             "left": "Benediction",
-            "right": "Cade Hyde"
+            "right": "Landen Johnson"
         },
         {
-            "center": "(Second hour today will be Priesthood and Relief Society)"
+            "center": "(Second hour today will be Sunday School)"
         }
     ]
 }
