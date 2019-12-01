@@ -32,40 +32,7 @@
             {
                 "name": "South primary room"
             },
-            "info": "We are planning on doing a musical number at the end of August."
-        },
-        {
-            "title": "Cookie Walk",
-            "date": "Sunday, August 18",
-            "time": "6:30 pm",
-            "location":
-            {
-                "name": "Joaquin Park",
-                "address": "378 N 400 E, Provo"
-            },
-            "info": "Please bake a batch of your favorite cookies to bring!"
-        },
-        {
-            "title": "Bicycle Repair Activity",
-            "date": "Wednesday, August 28",
-            "time": "7:00 pm",
-            "location":
-            {
-                "name": "Joaquin Park",
-                "address": "378 N 400 E, Provo"
-            },
-            "info": "Bring your bicycle to learn how to fix it. Brings tools if you have them."
-        },
-        {
-            "title": "Taco Truck",
-            "date": "Friday, September 6",
-            "time": "6:00 pm",
-            "location":
-            {
-                "name": "Church Pavillion",
-                "address": "1021 S 500 W, Provo"
-            },
-            "info": "TBA"
+            "info": "Come practice Christmas songs with us!"
         }
     ]
 }
