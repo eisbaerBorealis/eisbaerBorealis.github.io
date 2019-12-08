@@ -3,8 +3,8 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "December 1, 2019",
-        "specialDay": "Fast and Testimony Meeting"
+        "date": "December 8, 2019",
+        "specialDay": ""
     },
     "program":
     [
@@ -29,44 +29,44 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#86"
+            "right": "#TBA"
         },
         {
-            "center": "How Great Thou Art"
+            "center": "TBA"
         },
         {
             "left": "Invocation",
-            "right": "Carly Johnson"
+            "right": "Jesse Howell"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#196"
+            "right": "#TBA"
         },
         {
-            "center": "Jesus Once of Humble Birth"
+            "center": "TBA"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "center": "Bearing of Testimonies"
+            "center": "Christmas Program"
         },
         {
             "left": "Closing Hymn",
-            "right": "#210"
+            "right": "#TBA"
         },
         {
-            "center": "With Wondering Awe"
+            "center": "TBA"
         },
         {
             "left": "Benediction",
-            "right": "Landen Johnson"
+            "right": "Colby Howell"
         },
         {
-            "center": "(Second hour today will be Sunday School)"
+            "center": "(Second hour today will be Elder's Quorum/Relief Society)"
         }
     ]
 }
