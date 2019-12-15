@@ -3,14 +3,14 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "December 8, 2019",
+        "date": "December 15, 2019",
         "specialDay": ""
     },
     "program":
     [
         {
             "left": "Conducting",
-            "right": "Bryce Caten"
+            "right": "Tanner Hardy"
         },
         {
             "left": "Presiding",
@@ -29,44 +29,53 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#212"
+            "right": "#202"
         },
         {
-            "center": "Far Far Away on Judea's Plains"
+            "center": "Oh Come, All Ye Faithful"
         },
         {
             "left": "Invocation",
-            "right": "Jesse Howell"
+            "right": "TBA"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#187"
+            "right": "#188"
         },
         {
-            "center": "God Loved Us, So He Sent His Son"
+            "center": "Thy Will, O Lord, Be Done"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "center": "Christmas Program"
+            "left": "Speaker",
+            "right": "Evelyn McLean"
+        },
+        {
+            "left": "Musical Number",
+            "right": "Ansley Vasquez"
+        },
+        {
+            "left": "Speaker",
+            "right": "Alden McLean"
         },
         {
             "left": "Closing Hymn",
-            "right": "#201"
+            "right": "#213"
         },
         {
-            "center": "Joy to the World"
+            "center": "The First Noel"
         },
         {
             "left": "Benediction",
-            "right": "Colby Howell"
+            "right": "TBA"
         },
         {
-            "center": "(Second hour today will be Elder's Quorum/Relief Society)"
+            "center": "(Second hour today will be Sunday School)"
         }
     ]
 }
