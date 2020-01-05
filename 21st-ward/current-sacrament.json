@@ -3,14 +3,14 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "December 15, 2019",
-        "specialDay": ""
+        "date": "January 5, 2019",
+        "specialDay": "Fast and Testimony Meeting"
     },
     "program":
     [
         {
             "left": "Conducting",
-            "right": "Tanner Hardy"
+            "right": "Matt Kerr"
         },
         {
             "left": "Presiding",
@@ -18,7 +18,7 @@
         },
         {
             "left": "Organist",
-            "right": "Daniel Call"
+            "right": ""
         },
         {
             "left": "Chorister",
@@ -29,50 +29,41 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#202"
+            "right": "#217"
         },
         {
-            "center": "Oh Come, All Ye Faithful"
+            "center": "Come Let Us Anew"
         },
         {
             "left": "Invocation",
-            "right": "TBA"
+            "right": "Madison Larsen"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#188"
+            "right": "#169"
         },
         {
-            "center": "Thy Will, O Lord, Be Done"
+            "center": "As Now We Take The Sacrament"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "left": "Speaker",
-            "right": "Evelyn McLean"
-        },
-        {
-            "left": "Musical Number",
-            "right": "Ansley Vasquez"
-        },
-        {
-            "left": "Speaker",
-            "right": "Alden McLean"
+            "center": "Bearing of Testimonies"
         },
         {
             "left": "Closing Hymn",
-            "right": "#213"
+            "right": "#284"
         },
         {
-            "center": "The First Noel"
+            "center": "If You Could Hie to Kolob"
         },
         {
             "left": "Benediction",
-            "right": "TBA"
+            "right": "Sterling Larsen"
         },
         {
             "center": "(Second hour today will be Sunday School)"
