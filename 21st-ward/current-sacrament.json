@@ -3,14 +3,14 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "January 5, 2019",
-        "specialDay": "Fast and Testimony Meeting"
+        "date": "January 19, 2019",
+        "specialDay": ""
     },
     "program":
     [
         {
             "left": "Conducting",
-            "right": "Matt Kerr"
+            "right": "Bishop Johnson"
         },
         {
             "left": "Presiding",
@@ -18,7 +18,7 @@
         },
         {
             "left": "Organist",
-            "right": ""
+            "right": "Alex Ray"
         },
         {
             "left": "Chorister",
@@ -29,41 +29,46 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#217"
+            "right": "#75"
         },
         {
-            "center": "Come Let Us Anew"
+            "center": "In Hymns of Praise"
         },
         {
             "left": "Invocation",
-            "right": "Madison Larsen"
+            "right": "Rebecca Matthews"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#169"
+            "right": "#180"
         },
         {
-            "center": "As Now We Take The Sacrament"
+            "center": "Father in Heaven We Do Believe"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "center": "Bearing of Testimonies"
+            "left": "Speaker",
+            "right": "Austin Paxton"
+        },
+        {
+            "left": "Speaker",
+            "right": "Brother Coide"
         },
         {
             "left": "Closing Hymn",
-            "right": "#284"
+            "right": "#304"
         },
         {
-            "center": "If You Could Hie to Kolob"
+            "center": "Teach Me to Walk In The Light"
         },
         {
             "left": "Benediction",
-            "right": "Sterling Larsen"
+            "right": "Korey Matthews"
         },
         {
             "center": "(Second hour today will be Sunday School)"
