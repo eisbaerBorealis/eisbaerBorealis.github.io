@@ -3,7 +3,7 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "January 19, 2019",
+        "date": "January 26, 2019",
         "specialDay": ""
     },
     "program":
@@ -14,7 +14,7 @@
         },
         {
             "left": "Presiding",
-            "right": "Bishop Johnson"
+            "right": "Matt Kerr"
         },
         {
             "left": "Organist",
@@ -29,49 +29,53 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#75"
+            "right": "#86"
         },
         {
-            "center": "In Hymns of Praise"
+            "center": "How Great Thou Art"
         },
         {
             "left": "Invocation",
-            "right": "Rebecca Matthews"
+            "right": "Jason McDonald"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#180"
+            "right": "#176"
         },
         {
-            "center": "Father in Heaven We Do Believe"
+            "center": "Tis Sweet To Sing the Matchless Love"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
             "left": "Speaker",
-            "right": "Austin Paxton"
+            "right": "Amber Hicken"
+        },
+        {
+            "left": "Ward Choir",
+            "right": "Dear to the Heart of the Shepherd"
         },
         {
             "left": "Speaker",
-            "right": "Brother Coide"
+            "right": "Nathan Hicken"
         },
         {
             "left": "Closing Hymn",
-            "right": "#304"
+            "right": "#96"
         },
         {
-            "center": "Teach Me to Walk In The Light"
+            "center": "Dearest Children God Is Near You"
         },
         {
             "left": "Benediction",
-            "right": "Korey Matthews"
+            "right": "McKenzie McDonald"
         },
         {
-            "center": "(Second hour today will be Sunday School)"
+            "center": "(Second hour today will be Elders Quorum and Relief Society)"
         }
     ]
 }
