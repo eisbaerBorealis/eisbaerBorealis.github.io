@@ -3,79 +3,70 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "January 26, 2019",
-        "specialDay": ""
+        "date": "February 2, 2019",
+        "specialDay": "Fast and Testimony Meeting"
     },
     "program":
     [
+        {
+            "left": "Presiding",
+            "right": "Bishop Johnson"
+        },
         {
             "left": "Conducting",
             "right": "Bishop Johnson"
         },
         {
-            "left": "Presiding",
-            "right": "Matt Kerr"
-        },
-        {
             "left": "Organist",
-            "right": "Alex Ray"
+            "right": "Austin Porter"
         },
         {
             "left": "Chorister",
-            "right": "Makayla LaFond"
+            "right": "Darlee Cleveland"
         },
         {
             "center": "Welcome"
         },
         {
             "left": "Opening Hymn",
-            "right": "#86"
+            "right": "#219"
         },
         {
-            "center": "How Great Thou Art"
+            "center": "Because I Have Been Given Much"
         },
         {
             "left": "Invocation",
-            "right": "Jason McDonald"
+            "right": "Jonah Meherg"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#176"
+            "right": "#187"
         },
         {
-            "center": "Tis Sweet To Sing the Matchless Love"
+            "center": "God Loved Us So He Sent His Son"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "left": "Speaker",
-            "right": "Amber Hicken"
-        },
-        {
-            "left": "Ward Choir",
-            "right": "Dear to the Heart of the Shepherd"
-        },
-        {
-            "left": "Speaker",
-            "right": "Nathan Hicken"
+            "center": "Bearing of Testimonies"
         },
         {
             "left": "Closing Hymn",
-            "right": "#96"
+            "right": "#246"
         },
         {
-            "center": "Dearest Children God Is Near You"
+            "center": "Onward Christian Soldiers"
         },
         {
             "left": "Benediction",
-            "right": "McKenzie McDonald"
+            "right": "Megan Meherg"
         },
         {
-            "center": "(Second hour today will be Elders Quorum and Relief Society)"
+            "center": "(Second hour today will be Sunday School)"
         }
     ]
 }
