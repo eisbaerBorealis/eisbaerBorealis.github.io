@@ -9,7 +9,7 @@ var images =   ['1_aspect.png',
 var titles =   ['Aspect',
                 'Elevation',
                 'Ruggedness',
-                'Class',
+                'Land Classification',
                 'Distance to Dirt Roads',
                 'Distance to PowerLines'];
 
