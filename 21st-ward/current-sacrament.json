@@ -3,8 +3,8 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "February 2, 2019",
-        "specialDay": "Fast and Testimony Meeting"
+        "date": "February 9, 2019",
+        "specialDay": ""
     },
     "program":
     [
@@ -29,44 +29,49 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#219"
+            "right": "#85"
         },
         {
-            "center": "Because I Have Been Given Much"
+            "center": "How Firm a Foundation"
         },
         {
             "left": "Invocation",
-            "right": "Jonah Meherg"
+            "right": "Emily Nelson"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#187"
+            "right": "#172"
         },
         {
-            "center": "God Loved Us So He Sent His Son"
+            "center": "In Humility Our Savior"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "center": "Bearing of Testimonies"
+            "left": "Speaker",
+            "right": "Clarissa Mckell"
+        },
+        {
+            "left": "Speaker",
+            "right": "Zach Mckell"
         },
         {
             "left": "Closing Hymn",
-            "right": "#246"
+            "right": "#131"
         },
         {
-            "center": "Onward Christian Soldiers"
+            "center": "More Holiness Give Me"
         },
         {
             "left": "Benediction",
-            "right": "Megan Meherg"
+            "right": "Christopher Nelson"
         },
         {
-            "center": "(Second hour today will be Sunday School)"
+            "center": "(Second hour today will be Priesthood and Relief Society)"
         }
     ]
 }
