@@ -3,7 +3,7 @@
     {
         "wardInfo": "Provo Married Student 21st Ward",
         "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? -Romans 8:32",
-        "date": "February 23, 2019",
+        "date": "March 1, 2019",
         "specialDay": ""
     },
     "program":
@@ -14,11 +14,11 @@
         },
         {
             "left": "Conducting",
-            "right": "Bishop Johnson"
+            "right": "Tanner Hardy"
         },
         {
             "left": "Organist",
-            "right": "Austin Porter"
+            "right": "Alex Ray"
         },
         {
             "left": "Chorister",
@@ -29,49 +29,44 @@
         },
         {
             "left": "Opening Hymn",
-            "right": "#230"
+            "right": "#26"
         },
         {
-            "center": "Scatter Sunshine"
+            "center": "Joseph Smith's First Prayer"
         },
         {
             "left": "Invocation",
-            "right": "Alison Nino"
+            "right": "Austin Paxton"
         },
         {
             "center": "Ward and Stake Business"
         },
         {
             "left": "Sacrament Hymn",
-            "right": "#184"
+            "right": "#193"
         },
         {
-            "center": "Upon the Cross of Calvary"
+            "center": "I Stand All Amazed"
         },
         {
             "center": "Administration of the Sacrament"
         },
         {
-            "left": "Speaker",
-            "right": "Peter Fullmer"
-        },
-        {
-            "left": "Speaker",
-            "right": "Kenzie McDonald"
+            "center": "Bearing of Testimonies"
         },
         {
             "left": "Closing Hymn",
-            "right": "#308"
+            "right": "#138"
         },
         {
-            "center": "Love One Another"
+            "center": "Bless Our Fast We Pray"
         },
         {
             "left": "Benediction",
-            "right": "Jose Nino"
+            "right": "Megan Paxton"
         },
         {
-            "center": "(Second hour today will be Elders Quorum and Relief Society)"
+            "center": "(Second hour today will be Sunday School)"
         }
     ]
 }
