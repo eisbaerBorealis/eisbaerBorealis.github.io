@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<!-- Author: Jesse Howell
+ -->
+
+<html lang="en" class="theme-dark">
+
+<head>
+    <title>Elemental Critter Mound</title>
+    <meta charset="UTF-8">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/themes.css">
+    <link rel="stylesheet" type="text/css" href="styles/hexagons.css">
+    <link rel="stylesheet" type="text/css" href="styles/timer.css">
+
+    <!-- UTILITIES -->
+    <script src="scripts/0-main.js"></script>
+    <script src="scripts/1-html.js"></script>
+    <script src="scripts/2-saves.js"></script>
+    <script src="scripts/3-api.js"></script>
+    <script src="scripts/4-animation.js"></script>
+    <script src="scripts/5-debug.js"></script>
+
+    <!-- CLASSES -->
+    <script src="scripts/Critter.js"></script>
+    <script src="scripts/GameEngine.js"></script>
+    <script src="scripts/Hatchery.js"></script>
+    <script src="scripts/Player.js"></script>
+</head>
+
+<body>
+    <section id="saveSection" class="layer1">
+        <div id="loadPlayerDiv">
+            <h2>Load save</h2>
+            <div id="loadPlayerImage"></div>
+            <div id="loadPlayerName">loading...</div>
+            <div id="loadPlayerButton" class="button disabled">Load Player</div>
+            <div id="attemptReloadButton" class="button clickable warnButton hidden">Attempt Reload</div>
+        </div>
+        <div id="newPlayerDiv">
+            <h2>New game</h2>
+            <div id="newPlayerImage"></div>
+            <div id="newPlayerName">Character name:</br><input name="newName"></div>
+            <div id="newPlayerButton" class="button clickable">New Player</div>
+        </div>
+    </section>
+
+    <section id="playerSection" class="layer1">
+        <h2 class="clickable">Player</h2>
+        <div id="playerContent" class="collapsible">
+            <div id="playerProfile">
+                <div id="playerImage"></div>
+                <div id="playerName">Player Name</div>
+            </div>
+            <div id="playerPreviews">
+                <div id="playerHatcheries" class="layer2">Hatchery</div>
+                <div id="playerProduction" class="layer2">Production</div>
+                <div id="playerScience" class="layer2">Science</div>
+                <div id="playerWar" class="layer2">War</div>
+                <div id="playerSave" class="layer2">Save</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hatcheriesSection" class="layer1">
+        <h2 class="clickable">Hatchery</h2>
+        <div id="hatcheriesContent" class="collapsible">
+
+            <div id="royaltyContainer">
+                <div id="kingContainer">
+                    <div class="maleText">KING</div>
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexMale maleBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TO DO: Fix timer -->
+                <div id="hatcheryTimer" class="base-timer">
+                    <svg class="base-timer__svg" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <g class="base-timer__circle">
+                            <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+                            <path
+                                id="base-timer-path-remaining"
+                                stroke-dasharray="283"
+                                class="base-timer__path-remaining ${remainingPathColor}"
+                                d="
+                                M 50, 70
+                                m -45, 0
+                                a 45,45 0 1,0 90,0
+                                a 45,45 0 1,0 -90,0
+                                "
+                            ></path>
+                        </g>
+                    </svg>
+                    <span>
+                        <!-- Remaining time label -->
+                    </span>
+                </div>
+                <div id="queenContainer">
+                    <div class="femaleText">QUEEN</div>
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexFemale femaleBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offspringContainer">
+                <div id="hatcheryUpgradeButton" class="button disabled">Upgrade</br>10 sod</div>
+                <div class="hexRowEven">
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexDisabled disabledBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexDisabled disabledBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hexRowOdd">
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexDisabled disabledBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexDisabled disabledBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexDisabled disabledBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hexRowEven">
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexDisabled disabledBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexDisabled disabledBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moveOffspringContainer">
+                <div id="moveToNextGen" class="button disabled">Prince/Princess</div>
+                <div id="moveToMine" class="button disabled">Mine</div>
+                <div id="moveToFarm" class="button disabled">Farm</div>
+            </div>
+            <div class="moveOffspringContainer">
+                <!-- <div id="moveToCarry" class="button disabled">Carry</div> -->
+                <div id="moveToFactory" class="button disabled">Factory</div>
+                <div id="moveToArmy" class="button disabled">Army</div>
+                <div id="moveToDiscard" class="button disabled">Discard</div>
+            </div>
+
+            <div id="nextGenContainer">
+                <div id="nextKingContainer">
+                    <div class="maleText">PRINCE</div>
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexMale maleBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="nextGenButton" class="button disabled">NEXT GEN</div>
+                <div id="nextQueenContainer">
+                    <div class="femaleText">PRINCESS</div>
+                    <div class="hexContainer hexLarge">
+                        <div class="hexagon hexLarge hexFemale femaleBG">
+                            <div class="hexagonText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productionSection" class="layer1">
+        <h2 class="clickable">Production</h2>
+        <div id="productionContent" class="collapsible"></div>
+    </section>
+
+    <section id="scienceSection" class="layer1 hidden">
+        <h2 class="clickable">Science</h2>
+        <div id="scienceContent" class="collapsible"></div>
+    </section>
+
+    <section id="warSection" class="layer1 hidden">
+        <h2 class="clickable">War</h2>
+        <div id="warContent" class="collapsible"></div>
+    </section>
+
+    <section id="prestigeSection" class="layer1 hidden">
+        <h2 class="clickable">Prestige</h2>
+        <div id="prestigeContent" class="collapsible"></div>
+    </section>
+
+    <section id="achievementsSection" class="layer1">
+        <h2 class="clickable">Achievements</h2>
+        <div id="achievementsContent" class="collapsible"></div>
+    </section>
+
+    <section id="statsSection" class="layer1">
+        <h2 class="clickable">Stats</h2>
+        <div id="statsContent" class="collapsible"></div>
+    </section>
+
+    <section id="howtoSection" class="layer1">
+        <h2 class="clickable">How To Play</h2>
+        <div id="howtoContent" class="collapsible"></div>
+    </section>
+
+    <section id="aboutSection" class="layer1">
+        <h2 class="clickable">Settings/About</h2>
+        <div id="aboutContent" class="collapsible"></div>
+    </section>
+
+    <section id="loreSection" class="layer1">
+        <h2 class="clickable">Lore</h2>
+        <div id="loreContent" class="collapsible"></div>
+    </section>
+
+    <!-- TO DO
+        Remove closePopup on gray area
+        Make X fancy red
+        Possible: move popupContainer outside of popupGray -->
+    <div id="popupGray" class="hidden">
+        <div id="popupContainer"></div>
+    </div>
+</body>
+
+</html>
