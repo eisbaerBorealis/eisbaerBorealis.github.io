@@ -29,6 +29,15 @@ class GameEngine {
             if(time2 >= 1) {
                 time2 = 0;
             }
+
+            if(this.ticks % (this.ticksPerSecond / 10) === 0) {
+                let timeLeft = this.secondsPerRound - (this.ticks / this.ticksPerSecond);
+                timeLeft = Math.floor(timeLeft * 10) / 10;
+                if(timeLeft % 1.0 === 0) {
+                    timeLeft += '.0';
+                }
+                this.timer.updateText(timeLeft + ' s');
+            }
             
             this.timer.updateTimer(time1, time2);
 
@@ -36,6 +45,7 @@ class GameEngine {
                 this.paused = true;
                 this.ticks = 0;
                 this.timer.updateTimer(1, -1);
+                this.timer.updateText('START');
             }
         }
     }

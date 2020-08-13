@@ -26,6 +26,8 @@ function startup() {
     theGameEngine = new GameEngine();
     thePlayer = new Player();
 
+    addControls();
+
     addButtons();
 
     console.log('EisDebug: startup() complete. Time elapsed: ' + (new Date().getTime() - startTime) + ' ms');

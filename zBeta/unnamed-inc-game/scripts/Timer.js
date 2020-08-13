@@ -93,4 +93,8 @@ class Timer {
             .getElementById("timer-2-path-remaining")
             .setAttribute("stroke-dasharray", time2Interval);
     }
+
+    updateText(text) {
+        document.getElementById('startButtonText').innerHTML = text;
+    }
 }
