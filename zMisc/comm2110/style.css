@@ -1,0 +1,48 @@
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dddddd;
+}
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#topButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+#gameCanvas {
+    border:1px solid #000000;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #808080;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+    margin: 10px;
+}
+
+.activeButton {
+    background-color: #ffff80;
+}
+
+.hidden {
+    width: 0px;
+    opacity: 0;
+    padding: 0px;
+}
