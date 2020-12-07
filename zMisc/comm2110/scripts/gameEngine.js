@@ -15,6 +15,10 @@ function startGame() {
 
 function doTick() {
     tickCount++;
+    if(targetFightCooldown > 0) {
+        targetFightCooldown--;
+    }
+
     // console.log('EisDEBUG: doTick()');
     acceleratePlayer();
     movePlayer();
@@ -109,9 +113,10 @@ function toggleGrab() {
         if(checkGrab('target3')) {
             playerGrab = 'target3';
         }
-        document.getElementById('grab').innerHTML = 'RELEASE';
+        if(playerGrab !== null) {
+            document.getElementById('grab').innerHTML = 'RELEASE';
+        }
     } else {
-        // turn off grab
         playerGrab = null;
         document.getElementById('grab').innerHTML = 'GRAB';
 
@@ -144,8 +149,14 @@ function moveGrabbed() {
                     playerYPos += netY;
                     target1XPos += (playerXPos - target1XPos) / 10;
                     target1YPos = playerYPos + Math.sqrt(200 * 200 - Math.pow(playerXPos - target1XPos, 2));
-                } else {
-                    // Target winning
+                } else if(netY > 0) {
+                    target1XPos += netX;
+                    target1YPos += netY;
+                    if(target1YPos > 573) {
+                        target1YPos -= netY;
+                    }
+                    playerXPos += (target1XPos - playerXPos) / 10;
+                    playerYPos = target1YPos - Math.sqrt(200 * 200 - Math.pow(playerXPos - target1XPos, 2));
                 }
             }
             break;
@@ -164,7 +175,13 @@ function moveGrabbed() {
                     target2XPos += (playerXPos - target2XPos) / 10;
                     target2YPos = playerYPos + Math.sqrt(200 * 200 - Math.pow(playerXPos - target2XPos, 2));
                 } else {
-                    // Target winning
+                    target2XPos += netX;
+                    target2YPos += netY;
+                    if(target2YPos > 573) {
+                        target2YPos -= netY;
+                    }
+                    playerXPos += (target2XPos - playerXPos) / 10;
+                    playerYPos = target2YPos - Math.sqrt(200 * 200 - Math.pow(playerXPos - target2XPos, 2));
                 }
             }
             
@@ -184,7 +201,13 @@ function moveGrabbed() {
                     target3XPos += (playerXPos - target3XPos) / 10;
                     target3YPos = playerYPos + Math.sqrt(200 * 200 - Math.pow(playerXPos - target3XPos, 2));
                 } else {
-                    // Target winning
+                    target3XPos += netX;
+                    target3YPos += netY;
+                    if(target3YPos > 573) {
+                        target3YPos -= netY;
+                    }
+                    playerXPos += (target3XPos - playerXPos) / 10;
+                    playerYPos = target3YPos - Math.sqrt(200 * 200 - Math.pow(playerXPos - target3XPos, 2));
                 }
             }
             break;
@@ -212,7 +235,8 @@ function moveGrabbed() {
 }
 
 function targetsReact() {
-    if(target1AI !== 'green' && target1YPos < 275) {
+    if(target1AI !== 'green' && target1YPos < 274) {
+        console.log('EisDEBUG: targetFights is ' + targetFights);
         target1AI = 'green';
         target1YStr = 0;
         rope1XPos = target1XPos;
@@ -220,8 +244,12 @@ function targetsReact() {
         if(playerGrab !== null) {
             toggleGrab();
         }
+        
+        successes++;
+        console.log("SUCCESS! Total successes: " + successes);
     }
-    if(target2AI !== 'green' && target2YPos < 275) {
+    if(target2AI !== 'green' && target2YPos < 274) {
+        console.log('EisDEBUG: targetFights is ' + targetFights);
         target2AI = 'green';
         target2YStr = 0;
         rope2XPos = target2XPos;
@@ -229,8 +257,12 @@ function targetsReact() {
         if(playerGrab !== null) {
             toggleGrab();
         }
+        
+        successes++;
+        console.log("SUCCESS! Total successes: " + successes);
     }
-    if(target3AI !== 'green' && target3YPos < 275) {
+    if(target3AI !== 'green' && target3YPos < 274) {
+        console.log('EisDEBUG: targetFights is ' + targetFights);
         target3AI = 'green';
         target3YStr = 0;
         rope3XPos = target3XPos;
@@ -238,26 +270,46 @@ function targetsReact() {
         if(playerGrab !== null) {
             toggleGrab();
         }
+        
+        successes++;
+        console.log("SUCCESS! Total successes: " + successes);
     }
     
     if(playerGrab === 'rope1' || playerGrab === 'target1') {
         switch(target1AI) {
             case 'neutral':
+                // console.log('EisDEBUG: target1AI is neutral');
                 if(target1YPos < 500) {
                     target1AI = 'upset1';
                     console.log('EisDEBUG: target1AI now upset1');
                     target1Attract = -100;
                 }
                 if(playerYStr < 0) {
-                    target1YStr = playerYStr / -2;
+                    target1YStr = playerYStr / -3;
                 }
                 break;
             case 'upset1':
-                if(playerYStr < 0) {
+                // console.log('EisDEBUG: target1AI is upset1');
+                if(playerYStr < 0 && target1YStr < playerYStr / -1.5) {
                     target1YStr = playerYStr / -1.5;
                 }
-                if(target1YPos < 500) {
+                if(target1YPos < 400) {
                     target1Attract = -100;
+                    if(targetFightCountdown < 1) {
+                        if(targetFightCooldown < 1 && (targetFights < 3 || Math.random() > 1.00 - successes * 0.8)) {
+                            // fight!
+                            targetFights++;
+                            target1YStr = playerYStr * -1.25;
+                            targetFightCountdown = Math.floor(Math.random() * 20) + 1;
+                        }
+                    }
+                }
+                if(targetFightCountdown > 0) {
+                    targetFightCountdown--;
+                        if (targetFightCountdown === 0) {
+                            target1YStr = playerYStr / -1.55;
+                            targetFightCooldown = 10 / (successes + 1);
+                        }
                 }
                 break;
             case 'upset2':
@@ -269,10 +321,9 @@ function targetsReact() {
             case 'curiousB':
                 break;
             case 'green':
+                // Do nothing
                 break;
         }
-        // TODO turn green if on the other side
-        //  targetStr to 0
         
     } else if(playerGrab === 'rope2' || playerGrab === 'target2') {
         switch(target2AI) {
@@ -287,11 +338,27 @@ function targetsReact() {
                 }
                 break;
             case 'upset1':
-                if(playerYStr < 0) {
+                // console.log('EisDEBUG: target1AI is upset1');
+                if(playerYStr < 0 && target2YStr < playerYStr / -1.5) {
                     target2YStr = playerYStr / -1.5;
                 }
-                if(target2YPos < 500) {
+                if(target2YPos < 400) {
                     target2Attract = -100;
+                    if(targetFightCountdown < 1) {
+                        if(targetFightCooldown < 1 && (targetFights < 3 || Math.random() > 1.00 - successes * 0.8)) {
+                            // fight!
+                            targetFights++;
+                            target2YStr = playerYStr * -1.25;
+                            targetFightCountdown = Math.floor(Math.random() * 20) + 1;
+                        }
+                    }
+                }
+                if(targetFightCountdown > 0) {
+                    targetFightCountdown--;
+                        if (targetFightCountdown < 1) {
+                            target2YStr = playerYStr / -1.55;
+                            targetFightCooldown = 10 / (successes + 1);
+                        }
                 }
                 break;
             case 'upset2':
@@ -319,11 +386,27 @@ function targetsReact() {
                 }
                 break;
             case 'upset1':
-                if(playerYStr < 0) {
+                // console.log('EisDEBUG: target1AI is upset1');
+                if(playerYStr < 0 && target3YStr < playerYStr / -1.5) {
                     target3YStr = playerYStr / -1.5;
                 }
-                if(target1YPos < 500) {
+                if(target3YPos < 400) {
                     target3Attract = -100;
+                    if(targetFightCountdown < 1) {
+                        if(targetFightCooldown < 1 && (targetFights < 3 || Math.random() > 1.00 - successes * 0.8)) {
+                            // fight!
+                            targetFights++;
+                            target3YStr = playerYStr * -1.25;
+                            targetFightCountdown = Math.floor(Math.random() * 20) + 1;
+                        }
+                    }
+                }
+                if(targetFightCountdown > 0) {
+                    targetFightCountdown--;
+                        if (targetFightCountdown === 0) {
+                            target3YStr = playerYStr / -1.55;
+                            targetFightCooldown = 10 / (successes + 1);
+                        }
                 }
                 break;
             case 'upset2':

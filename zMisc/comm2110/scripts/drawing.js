@@ -76,9 +76,11 @@ function drawHighlights() {
 
     if(canGrab && !document.getElementById('grab').classList.contains('activeButton')) {
         document.getElementById('grab').classList.add('activeButton');
+        document.getElementById('grab').classList.add('clickable');
     }
     if(!canGrab && document.getElementById('grab').classList.contains('activeButton')) {
         document.getElementById('grab').classList.remove('activeButton');
+        document.getElementById('grab').classList.remove('clickable');
     }
 }
 

@@ -46,6 +46,10 @@ var newLastClick = false;
 var boost = 1.0;
 var boostCountdown = 0;
 
+var targetFightCountdown = 0;
+var targetFightCooldown = 0;
+var targetFights = 0;
+
 var introText = ['The point of this game is to simulate',
                  'changing people\'s minds. You want to',
                  'convince people by bringing them over',
