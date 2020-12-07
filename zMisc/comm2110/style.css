@@ -41,6 +41,10 @@ body {
     background-color: #ffff80;
 }
 
+.activeButton:hover {
+    cursor: pointer;
+}
+
 .hidden {
     width: 0px;
     opacity: 0;

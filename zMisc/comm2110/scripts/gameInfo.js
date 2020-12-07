@@ -1,4 +1,5 @@
 const MAX_STR = 5;
+const ROPE_LENGTH = 200;
 
 var gameTicks = 0;
 var playerXPos = 200;
@@ -30,19 +31,20 @@ var target3YStr = 0;
 
 var rope1XPos = 50;
 var rope1YPos = 350;
-var rope1Color = 'red';
+var rope1Color = '#ff0000';
 var rope2XPos = 200;
 var rope2YPos = 350;
-var rope2Color = 'red';
+var rope2Color = '#ff0000';
 var rope3XPos = 350;
 var rope3YPos = 350;
-var rope3Color = 'red';
+var rope3Color = '#ff0000';
 
 var successes = 0;
 var lastClickX = -1;
 var lastClickY = -1;
 var newLastClick = false;
-var boost = false;
+var boost = 1.0;
+var boostCountdown = 0;
 
 var introText = ['The point of this game is to simulate',
                  'changing people\'s minds. You want to',
