@@ -2,10 +2,12 @@ const CIRCLE_RADIUS = 25;
 
 function updateActiveGame() {
     drawBackground();
+    drawAttract();
     drawHighlights();
     drawRopes();
     drawTargets();
     drawPlayer();
+    //drawSymbols();
     drawTimer();
 }
 
@@ -16,6 +18,66 @@ function drawBackground() {
     ctx.fillRect(0, 0, 400, 300);
     ctx.fillStyle = "#ff8080";
     ctx.fillRect(0, 300, 400, 300);
+}
+
+function drawAttract() {
+    let attractRadius;
+
+    if(target1AI !== 'green' && target1Attract > -30) {
+        let fillColor = '#00a000';
+        // console.log('EisDEBUG: drawing target1Attract');
+        // transparency should be low for -30 and high for -1
+        // 9 + (target1Attract / 4)
+        if(target1Attract < 0) {
+            fillColor += (Math.floor(9 + (target1Attract / 4)))  + '0'
+        } else {
+            fillColor += 'aa';
+        }
+        ctx.fillStyle = fillColor;
+        ctx.beginPath();
+        // radius should be ~50 down to 30.
+        attractRadius = (target1Attract * -1) + 26;
+        if(attractRadius < 35) {
+            attractRadius = 35;
+        }
+        ctx.arc(target1XPos, target1YPos, attractRadius, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+    }
+    if(target2AI !== 'green' && target2Attract > -30) {
+        let fillColor = '#00a000';
+        if(target2Attract < 0) {
+            fillColor += (Math.floor(9 + (target2Attract / 4)))  + '0'
+        } else {
+            fillColor += 'aa';
+        }
+        ctx.fillStyle = fillColor;
+        ctx.beginPath();
+        attractRadius = (target2Attract * -1) + 26;
+        if(attractRadius < 35) {
+            attractRadius = 35;
+        }
+        ctx.arc(target2XPos, target2YPos, attractRadius, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+    }
+    if(target3AI !== 'green' && target3Attract > -30) {
+        let fillColor = '#00a000';
+        if(target3Attract < 0) {
+            fillColor += (Math.floor(9 + (target3Attract / 4)))  + '0'
+        } else {
+            fillColor += 'aa';
+        }
+        ctx.fillStyle = fillColor;
+        ctx.beginPath();
+        attractRadius = (target3Attract * -1) + 26;
+        if(attractRadius < 35) {
+            attractRadius = 35;
+        }
+        ctx.arc(target3XPos, target3YPos, attractRadius, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+    }
 }
 
 function drawHighlights() {

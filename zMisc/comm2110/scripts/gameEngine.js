@@ -311,12 +311,17 @@ function targetsReact() {
                             targetFightCooldown = 10 / (successes + 1);
                         }
                 }
+                // if(target1Attract > 0) {
+                //     target1AI = 'curious';
+                //     console.log('EisDEBUG: target1AI is now curious');
+                // }
                 break;
             case 'upset2':
                 break;
             case 'upset3':
                 break;
             case 'curious':
+                // probably get mad
                 break;
             case 'curiousB':
                 break;
@@ -423,5 +428,97 @@ function targetsReact() {
         }
     } else if(playerGrab === null) {
         // TODO if close, raise attract
+        if(target1AI !== 'green' && target1AI !== 'curious' && target1AI !== 'curiousB' && target1Attract > 0) {
+            target1AI = 'curious';
+            console.log('EisDEBUG: target1AI is now curious');
+        }
+        if(target2AI !== 'green' && target2AI !== 'curious' && target2AI !== 'curiousB' && target2Attract > 0) {
+            target2AI = 'curious';
+            console.log('EisDEBUG: target2AI is now curious');
+        }
+        if(target3AI !== 'green' && target3AI !== 'curious' && target3AI !== 'curiousB' && target3Attract > 0) {
+            target3AI = 'curious';
+            console.log('EisDEBUG: target3AI is now curious');
+        }
+
+        if(target1Attract < 100 && getDifference(target1XPos, playerXPos, target1YPos, playerYPos) < 100) {
+            target1Attract++;
+        }
+        if(target2Attract < 100 && getDifference(target2XPos, playerXPos, target2YPos, playerYPos) < 100) {
+            target2Attract++;
+        }
+        if(target3Attract < 100 && getDifference(target3XPos, playerXPos, target3YPos, playerYPos) < 100) {
+            target3Attract++;
+        }
+
+        if(target1AI === 'curious' && getDifference(target1XPos, playerXPos, target1YPos, playerYPos) < (target1Attract + 50) &&
+            getDifference(target1XPos, playerXPos, target1YPos, playerYPos) > 60) {
+            // move towards player
+            if(playerXPos - target1XPos > 10) {
+                target1XPos += 3;
+            } else if(playerXPos - target1XPos > 0) {
+                target1XPos += 1;
+            } else if(playerXPos - target1XPos < -10) {
+                target1XPos -= 3;
+            } else if(playerXPos - target1XPos < 0) {
+                target1XPos -= 1;
+            }
+            
+            if(playerYPos - target1YPos > 10) {
+                target1YPos += 3;
+            } else if(playerYPos - target1YPos > 0) {
+                target1YPos += 1;
+            } else if(playerYPos - target1YPos < -10) {
+                target1YPos -= 3;
+            } else if(playerYPos - target1YPos < 0) {
+                target1YPos -= 1;
+            }
+        }
+        if(target2AI === 'curious' && getDifference(target2XPos, playerXPos, target2YPos, playerYPos) < (target2Attract + 50) &&
+            getDifference(target2XPos, playerXPos, target2YPos, playerYPos) > 60) {
+            // move towards player
+            if(playerXPos - target2XPos > 10) {
+                target2XPos += 3;
+            } else if(playerXPos - target2XPos > 0) {
+                target2XPos += 1;
+            } else if(playerXPos - target2XPos < -10) {
+                target2XPos -= 3;
+            } else if(playerXPos - target2XPos < 0) {
+                target2XPos -= 1;
+            }
+            
+            if(playerYPos - target2YPos > 10) {
+                target2YPos += 3;
+            } else if(playerYPos - target2YPos > 0) {
+                target2YPos += 1;
+            } else if(playerYPos - target2YPos < -10) {
+                target2YPos -= 3;
+            } else if(playerYPos - target2YPos < 0) {
+                target2YPos -= 1;
+            }
+        }
+        if(target3AI === 'curious' && getDifference(target3XPos, playerXPos, target3YPos, playerYPos) < (target3Attract + 50) &&
+            getDifference(target3XPos, playerXPos, target3YPos, playerYPos) > 60) {
+            // move towards player
+            if(playerXPos - target3XPos > 10) {
+                target3XPos += 3;
+            } else if(playerXPos - target3XPos > 0) {
+                target3XPos += 1;
+            } else if(playerXPos - target3XPos < -10) {
+                target3XPos -= 3;
+            } else if(playerXPos - target3XPos < 0) {
+                target3XPos -= 1;
+            }
+            
+            if(playerYPos - target3YPos > 10) {
+                target3YPos += 3;
+            } else if(playerYPos - target3YPos > 0) {
+                target3YPos += 1;
+            } else if(playerYPos - target3YPos < -10) {
+                target3YPos -= 3;
+            } else if(playerYPos - target3YPos < 0) {
+                target3YPos -= 1;
+            }
+        }
     }
 }
