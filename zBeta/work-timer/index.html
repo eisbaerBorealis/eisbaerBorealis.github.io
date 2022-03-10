@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!-- Author: Jesse Howell
+
+ -->
+
+<html lang="en" class="theme-default">
+
+<head>
+    <title>Work Clock</title>
+    <meta charset="UTF-8">
+
+    <script src="assets/settings.js"></script>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/engine.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/utility.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/themes.css">
+</head>
+
+<body>
+    <div class="timer">
+        <svg id="main-svg" class="timer-svg" >
+            <rect id="backcard" />
+            <g id="big-clock">
+                <circle id="9oclock" class="ring-back" r=0 stroke-width=0 />
+                <circle id="10oclock" class="ring-back" r=0 stroke-width=0 />
+                <circle id="11oclock" class="ring-back" r=0 stroke-width=0 />
+                <circle id="12oclock" class="ring-back" r=0 stroke-width=0 />
+                <circle id="13oclock" class="ring-back" r=0 stroke-width=0 />
+                <circle id="14oclock" class="ring-back" r=0 stroke-width=0 />
+                <circle id="15oclock" class="ring-back" r=0 stroke-width=0 />
+                <circle id="16oclock" class="ring-back" r=0 stroke-width=0 />
+
+                <circle id="active-ring" r=0 stroke-width=0 stroke-dasharray="0 0" />
+
+                <text id="clck-9" class="ring-text" x=398 y=-5 >9</text>
+                <text id="clck-10" class="ring-text" x=396 y=-5 >10</text>
+                <text id="clck-11" class="ring-text" x=396 y=-5 >11</text>
+                <text id="clck-12" class="ring-text" x=396 y=-5 >12</text>
+                <text id="clck-13" class="ring-text" x=396 y=-5 >13</text>
+                <text id="clck-14" class="ring-text" x=396 y=-5 >14</text>
+                <text id="clck-15" class="ring-text" x=396 y=-5 >15</text>
+                <text id="clck-16" class="ring-text" x=396 y=-5 >16</text>
+            </g>
+            <g id="small-clock">
+                <circle id="sm-clck-back" r=100 />
+                <circle id="sm-clck-face" r=95 />
+                <g id="sm-clck-dash">
+                    <circle class="dash-1" r=90 stroke-width=6 stroke-dasharray="1 8.4248" />
+                    <circle class="dash-2" r=88 stroke-width=11 stroke-dasharray="2 44.0767" />
+                </g>
+
+                <rect id="dg-clck-back" x=687 y=840 width=76 height=35 rx=8 />
+                <text id="dg-clck-text" x=693 y=868 >00:00</text>
+            </g>
+        </svg>
+    </div>
+</body>
+
+</html>

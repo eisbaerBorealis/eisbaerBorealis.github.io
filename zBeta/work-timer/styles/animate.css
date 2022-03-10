@@ -1,0 +1,96 @@
+/* :root {
+    --anim-duration: 1s;
+} */
+
+/* CLOCK STRIKES 10 */
+/* @keyframes big-sml-9oclock-anim {
+    from {
+        r: 300px;
+        stroke-width: 40px; */
+        /* edge is 320 */
+    /* }
+  
+    to {
+        r: 315px;
+        stroke-width: 10px; */
+        /* edge needs to be 320 */
+        /* inner edge is now 310 */
+    /* }
+}
+
+.big-sml-9oclock {
+    animation-name: big-sml-9oclock-anim;
+    animation-duration: var(--anim-duration); */
+    /* animation-fill-mode: forwards; */
+    /* animation-iteration-count: 1;
+}
+
+@keyframes sml-big-10oclock-anim {
+    from {
+        r: 270px;
+        stroke-width: 10px;
+    }
+  
+    to {
+        r: 285px;
+        stroke-width: 40px; */
+        /* gap is 5, edge must be 305 */
+    /* }
+}
+
+.sml-big-10oclock {
+    animation-name: sml-big-10oclock-anim;
+    animation-duration: var(--anim-duration); */
+    /* animation-fill-mode: forwards; */
+    /* animation-iteration-count: 1;
+} */
+
+
+
+
+
+
+
+
+
+
+/* CLOCK STRIKES 11 */
+@keyframes big-sml-10-oclock-anim {
+    from {
+        r: 285px;
+        stroke-width: 40px;
+    }
+  
+    to {
+        r: 300px;
+        stroke-width: 10px;
+        /* gap is 5, edge must stay 305 */
+        /* inner edge is now 295 */
+    }
+}
+
+.big-sml-10-oclock {
+    animation-name: big-sml-10-oclock-anim;
+    animation-duration: var(--anim-duration);
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: 1;
+}
+
+@keyframes sml-big-11oclock-anim {
+    from {
+        r: 255px;
+        stroke-width: 10px;
+    }
+  
+    to {
+        r: 270px;
+        stroke-width: 40px;
+    }
+}
+
+.sml-big-11oclock {
+    animation-name: sml-big-11oclock-anim;
+    animation-duration: var(--anim-duration);
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: 1;
+}

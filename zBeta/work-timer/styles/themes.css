@@ -1,0 +1,22 @@
+.theme-default {
+    --color-background: #1a0044;
+    --color-backcard: #ebdfff4f;
+    --ring-active: #0e660e;
+    --ring-gray: #3d3d3d;
+    
+    /* CLOCK STUFF */
+    --clock-font: 30px digitalFont;
+    --clock-back: #000000;
+    --clock-face: #ffffff;
+    --clock-dash: #000000;
+    --clock-hour: #000000;
+    --clock-min: #000000;
+    --clock-sec: #ff0000;
+    --clock-digital-back: #000000;
+    --clock-digital-text: #ffffff;
+}
+
+@font-face {
+    font-family: digitalFont;
+    src: url(../assets/Digital\ Dismay.otf);
+}

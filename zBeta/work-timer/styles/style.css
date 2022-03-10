@@ -1,0 +1,211 @@
+/** Author: Jesse Howell
+ * 
+ *  
+ */
+
+:root {
+    --main-width: 900px;
+    --main-height: 900px;
+    --clock-center-x: 400px;
+    --clock-center-y: var(--clock-center-x);
+    --sm-clock-center-x: 725px;
+    --sm-clock-center-y: var(--sm-clock-center-x);
+}
+
+html {
+    background-color: var(--color-background);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-svg {
+    width: var(--main-width);
+    height: var(--main-height);
+    border-radius: 30px;
+}
+
+#backcard {
+    fill: var(--color-backcard);
+    x: 0;
+    y: 0;
+    width: var(--main-width);
+    height: var(--main-height);
+}
+
+/* .thick-ring-back, .thin-ring-back {
+    fill: none;
+    stroke: var(--ring-gray);
+    cx: var(--clock-center-x);
+    cy: var(--clock-center-x);
+} */
+
+/* .thick-ring-back {
+    stroke-width: 40px;
+}
+
+.thin-ring-back {
+    stroke-width: 10px;
+} */
+
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+#big-clock > circle {
+    cx: var(--clock-center-x);
+    cy: var(--clock-center-y);
+    /* stroke: var(--ring-gray); */
+    fill: none;
+}
+
+.ring-back {
+    stroke: var(--ring-gray);
+}
+
+#active-ring {
+    /* fill: none; */
+    /* stroke-width: 35px; */
+    stroke: var(--ring-active);
+    /* cx: var(--clock-center-x);
+    cy: var(--clock-center-y); */
+    transform-origin: var(--clock-center-x) var(--clock-center-y);
+    transform: rotate(-90deg)
+}
+
+#small-clock > circle {
+    cx: var(--sm-clock-center-x);
+    cy: var(--sm-clock-center-y);
+    stroke-width: 0px;
+}
+
+#sm-clck-dash > circle {
+    cx: var(--sm-clock-center-x);
+    cy: var(--sm-clock-center-y);
+    stroke: var(--clock-dash);
+    fill: none;
+}
+
+#sm-clck-back {
+    fill: var(--clock-back);
+}
+
+#sm-clck-face {
+    fill: var(--clock-face);
+}
+
+.dash-2 {
+    transform-origin: var(--sm-clock-center-x) var(--sm-clock-center-y);
+    transform: rotate(-0.5deg)
+}
+
+#dg-clck-back {
+    fill: var(--clock-digital-back);
+}
+
+#dg-clck-text {
+    fill: var(--clock-digital-text);
+    font: var(--clock-font);
+}
+
+.ring-text {
+    fill: var(--clock-digital-text);
+    font: var(--clock-font);
+    font-size: 10px;
+}
+
+/* .ring-01 {r: 180px;}
+.ring-02 {r: 195px;}
+.ring-03 {r: 210px;}
+.ring-04 {r: 225px;}
+.ring-05 {r: 240px;}
+.ring-06 {r: 255px;}
+.ring-07 {r: 270px;}
+.ring-08 {r: 285px;}
+.ring-09 {r: 300px;}
+.ring-10 {r: 315px;} */
+
+/* 
+.ring-9oclock-1 {r: 285px;}
+.ring-9oclock-2 {r: 300px;}
+.ring-9oclock-3 {r: 315px;}
+
+.ring-10oclock-1 {r: 270px;}
+.ring-10oclock-2 {r: 285px;}
+.ring-10oclock-3 {r: 300px;}
+
+.ring-11oclock-1 {r: 255px;}
+.ring-11oclock-2 {r: 270px;}
+.ring-11oclock-3 {r: 285px;}
+
+.ring-12oclock-1 {r: 240px;}
+.ring-12oclock-2 {r: 255px;}
+.ring-12oclock-3 {r: 270px;}
+
+.ring-13oclock-1 {r: 225px;}
+.ring-13oclock-2 {r: 240px;}
+.ring-13oclock-3 {r: 255px;}
+
+.ring-14oclock-1 {r: 210px;}
+.ring-14oclock-2 {r: 225px;}
+.ring-14oclock-3 {r: 240px;}
+
+.ring-15oclock-1 {r: 195px;}
+.ring-15oclock-2 {r: 210px;}
+.ring-15oclock-3 {r: 225px;}
+
+.ring-16oclock-1 {r: 180px;}
+.ring-16oclock-2 {r: 195px;}
+.ring-16oclock-3 {r: 210px;} */
+
+
+ /* .timer-svg {
+    border-radius: 30px;
+}
+
+.timer-circle-back {
+    stroke-width: 80px;
+    stroke: gray;
+    fill: none;
+}
+
+#timer-path {
+    stroke-width: 75px; */
+    /* stroke: red; */
+    /* fill: none;
+    transform-origin: 200px 200px;
+    transform: rotate(-90deg)
+               scaleX(-1);
+}
+
+#idle-timer-path {
+    stroke-width: 5px;
+    stroke: #0000cc;
+    fill: none;
+    transform-origin: 200px 200px;
+    transform: rotate(-90deg)
+               scaleX(-1);
+} */
+
+
+/* https://www.fontspace.com/digital-7-font-f7087 */
+/* #time-text {
+    font-size: 50px;
+    fill: black;
+}
+
+#task-text {
+    font-size: 50px;
+    fill: black;
+}  */
