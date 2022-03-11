@@ -11,7 +11,7 @@ function startEngine() {
     }, 1000 / TICKS_PER_SEC);
 
     isBroken = true;
-    if(FAST_MODE) {
+    if(fast_mode) {
         currHour = 8;
     }
     updateTime();
@@ -20,7 +20,7 @@ function startEngine() {
 }
 
 function tick() {
-    if(FAST_MODE) {
+    if(fast_mode) {
         currMSec += 6000;
     } else {
         currMSec += 1000 / TICKS_PER_SEC;
@@ -136,7 +136,7 @@ function updateAnalogClock() {
 }
 
 function updateTime() {
-    if(!FAST_MODE) {
+    if(!fast_mode) {
         let time = new Date();
         
         currHour = time.getHours();
