@@ -43,22 +43,6 @@ body {
     height: var(--main-height);
 }
 
-/* .thick-ring-back, .thin-ring-back {
-    fill: none;
-    stroke: var(--ring-gray);
-    cx: var(--clock-center-x);
-    cy: var(--clock-center-x);
-} */
-
-/* .thick-ring-back {
-    stroke-width: 40px;
-}
-
-.thin-ring-back {
-    stroke-width: 10px;
-} */
-
-
 .clickable:hover {
     cursor: pointer;
 }
@@ -66,7 +50,6 @@ body {
 #big-clock > circle {
     cx: var(--clock-center-x);
     cy: var(--clock-center-y);
-    /* stroke: var(--ring-gray); */
     fill: none;
 }
 
@@ -75,11 +58,7 @@ body {
 }
 
 #active-ring {
-    /* fill: none; */
-    /* stroke-width: 35px; */
     stroke: var(--ring-active);
-    /* cx: var(--clock-center-x);
-    cy: var(--clock-center-y); */
     transform-origin: var(--clock-center-x) var(--clock-center-y);
     transform: rotate(-90deg)
 }
@@ -108,6 +87,21 @@ body {
 .dash-2 {
     transform-origin: var(--sm-clock-center-x) var(--sm-clock-center-y);
     transform: rotate(-0.5deg)
+}
+
+#h-hand {
+    stroke: var(--clock-hour);
+    stroke-width: 5px;
+}
+
+#m-hand {
+    stroke: var(--clock-min);
+    stroke-width: 4px;
+}
+
+#s-hand {
+    stroke: var(--clock-sec);
+    stroke-width: 2px;
 }
 
 #dg-clck-back {

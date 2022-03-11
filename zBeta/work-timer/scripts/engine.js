@@ -1,4 +1,4 @@
-var currHour = 8;
+var currHour = 0;
 var currMin = 0;
 var currSec = 0;
 var currMSec = 0;
@@ -9,16 +9,27 @@ function startEngine() {
     engineInterval = setInterval(() => {
         tick();
     }, 1000 / TICKS_PER_SEC);
+
+    isBroken = true;
+    if(FAST_MODE) {
+        currHour = 8;
+    }
+    updateTime();
+    updateDigitalClock();
+    updateAnalogClock();
 }
 
 function tick() {
-    // currMSec += 1000 / TICKS_PER_SEC;
-    /*TEMP*/currMSec += 6000;
-    // 600 ticks per "hour" (15 seconds at 40 ticks per second)
-    // 1 hour = 600 ticks, 1 minute = 10 ticks, 1 tick = 6 seconds
+    if(FAST_MODE) {
+        currMSec += 6000;
+    } else {
+        currMSec += 1000 / TICKS_PER_SEC;
+    }
+    
     if (currMSec >= 1000) {
         currSec += Math.floor(currMSec / 1000);
         currMSec %= 1000;
+        updateTime();
         updateAnalogClock();
     }if(isBroken) {
         fixRings();
@@ -37,8 +48,7 @@ function tick() {
         updateDigitalClock();
     }
 
-    if(Math.floor(currSec / 60) !== currMin) {
-        currMin = Math.floor(currSec / 60);
+    if(currSec % 60 === 0 && currMSec === 0) {
         updateDigitalClock();
     }
 
@@ -93,7 +103,54 @@ function updateActiveRing() {
 }
 
 function updateAnalogClock() {
+    let secRatio = (currSec % 60) / 60;
+    let minRatio = currSec / 3600;
+    let hourRatio = (currHour * 3600 + currSec) / 43200;
 
+    let secSin = Math.sin(secRatio * TWO_PI);
+    let secCos = Math.cos(secRatio * TWO_PI);
+    let minSin = Math.sin(minRatio * TWO_PI);
+    let minCos = Math.cos(minRatio * TWO_PI);
+    let hourSin = Math.sin(hourRatio * TWO_PI);
+    let hourCos = Math.cos(hourRatio * TWO_PI);
+
+    // x1, y1, x2, y2
+    let secX1 = S_HAND_LG * secSin;
+    let secY1 = S_HAND_LG * secCos * -1;
+    let secX2 = S_HAND_ST * secSin * -1;
+    let secY2 = S_HAND_ST * secCos;
+    
+    let minX1 = M_HAND_LG * minSin;
+    let minY1 = M_HAND_LG * minCos * -1;
+    let minX2 = M_HAND_ST * minSin * -1;
+    let minY2 = M_HAND_ST * minCos;
+    
+    let hourX1 = H_HAND_LG * hourSin;
+    let hourY1 = H_HAND_LG * hourCos * -1;
+    let hourX2 = H_HAND_ST * hourSin * -1;
+    let hourY2 = H_HAND_ST * hourCos;
+
+    updateLineById('s-hand', SM_CLK_X, SM_CLK_Y, secX1, secY1, secX2, secY2);
+    updateLineById('m-hand', SM_CLK_X, SM_CLK_Y, minX1, minY1, minX2, minY2);
+    updateLineById('h-hand', SM_CLK_X, SM_CLK_Y, hourX1, hourY1, hourX2, hourY2);
+}
+
+function updateTime() {
+    if(!FAST_MODE) {
+        let time = new Date();
+        
+        currHour = time.getHours();
+        currMin = time.getMinutes();
+        currSec = currMin * 60 + time.getSeconds();
+    } else {
+        currMin = Math.floor(currSec / 60);
+    }
+
+    // check digital clock and update if necessary
+    let digitalTime = document.getElementById('dg-clck-text').innerHTML.split(':');
+    if(digitalTime[0] != currHour || digitalTime[1] != currMin) {
+        updateDigitalClock();
+    }
 }
 
 function killEngine() {
