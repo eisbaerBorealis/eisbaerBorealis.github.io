@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!-- Author: Jesse Howell
+ -->
+
+<html lang="en">
+
+<head>
+    <title>Prettify SVGs</title>
+    <meta charset="UTF-8">
+
+    <script>
+        /*
+            DELETE ME
+            arr.splice(index, 0, item); will insert item into arr at the specified index (deleting 0 items first, that is, it's just an insert).
+            // EXAMPLE INPUT:
+            // M449.899247,438.957555L129.777129,655.04992l-26.770548-47.400872L449.899247,438.957555Z
+        */
+        const alphaRegex = /[A-Za-z]/g;
+
+        function prettifySVG(inText) {
+            let spaceAround = document.getElementById('spaceAround').checked;
+            let commaToSpace = document.getElementById('commaToSpace').checked;
+            let newLines = document.getElementById('newLines').checked;
+            let spaceBeforeMinus = document.getElementById('spaceBeforeMinus').checked;
+            let rounding = document.getElementById('rounding').value;
+
+            console.log('-----eisDEBUG: prettifySVG()-----');
+            console.log('eisDEBUG: spaceAround is ' + spaceAround);
+            console.log('eisDEBUG: commaToSpace is ' + commaToSpace);
+            console.log('eisDEBUG: newLines is ' + newLines);
+            console.log('eisDEBUG: spaceBeforeMinus is ' + spaceBeforeMinus);
+            console.log('eisDEBUG: rounding is ' + rounding);
+
+            // round numbers
+            let patternStr = '\\.[0-9]{' + rounding + '}[0-9]+';
+            let numRegex = new RegExp(patternStr, "g");
+
+            let numsRounded = 1;
+            while(numsRounded > 0) { // this fixes a weird unpredictable bug where the regex.exec would skip a number sometimes (but catch it on a second run)
+                numsRounded = 0;
+                let numMatch = numRegex.exec(inText);
+                while(numMatch !== null) {
+                    // console.log('  eisDebug: numMatch is ' + numMatch);
+                    // let num = Number(numMatch[0]);
+                    let index = numMatch.index;
+                    let num = roundToX(Number(numMatch[0]), rounding).toFixed(rounding);
+
+                    inText = inText.replace(numMatch[0], num.toString().substr(1));
+                    numsRounded++;
+                    // console.log('    eisDebug: new inText is ' + inText);
+
+                    numMatch = numRegex.exec(inText);
+                }
+            }
+
+            // console.log('  eisDebug: inText is ' + inText);
+            inText = inText.split('');
+            let i = 0;
+            while(i < inText.length) {
+                if(alphaRegex.test(inText[i])) {
+                    // character is a letter
+
+                    if(newLines && i > 0) {
+                        inText.splice(i, 0, '\n');
+                        i++;
+                    }
+
+                    if(spaceAround) {
+                        // please put spaces around the character
+                        if(!newLines) {
+                            inText.splice(i, 0, ' ');
+                            i++;
+                        }
+                        inText.splice(i+1, 0, ' ');
+                    } else {
+                        // please remove spaces around the character
+                        while(i > 0 && inText[i-1] === ' ') {
+                            inText.splice(i-1, 1);
+                            i--;
+                        }
+                        while(i < inText.length - 1 && inText[i+1] === ' ') {
+                            inText.splice(i+1, 1);
+                        }
+                    }
+                } else if(inText[i] === ',') {
+                    if(commaToSpace) {
+                        inText[i] = ' ';
+                    }
+                } else if(inText[i] === '-') {
+                    if(spaceBeforeMinus && /[0-9]/.test(inText[i-1])) {
+                        inText.splice(i, 0, ' ');
+                        i++;
+                    }
+                }
+
+                i++
+            }
+
+            i = 0;
+            while(i < inText.length - 1) {
+                if(inText[i] === ' ') {
+                    while(inText[i+1] === ' ') {
+                        inText.splice(i+1, 1);
+                    }
+                }
+                i++;
+            }
+
+            inText = inText.join('').trim();
+
+            return inText;
+        }
+
+        function roundToX(num, x) {
+            let tens = Math.pow(10, x);
+            // return (Math.floor(num * tens)) / tens;
+            return (Math.round(num * tens)) / tens;
+        }
+    </script>
+</head>
+
+<body>
+    <label for="inText">INPUT: </label>
+        <!-- <input type="text" id="inText"><br> -->
+        <textarea id="inText" rows="1" cols="100"></textarea><br>
+    <input type="checkbox" id="spaceAround">
+        <label for="spaceAround">Spaces around letters</label><br>
+    <input type="checkbox" id="commaToSpace">
+        <label for="commaToSpace">Commas to Spaces</label><br>
+    <input type="checkbox" id="spaceBeforeMinus">
+        <label for="spaceBeforeMinus">Spaces before negative numbers</label><br>
+    <input type="checkbox" id="newLines">
+        <label for="newLines">New line per letter</label><br>
+    <input type="number" id="rounding" value="2" style="width: 50px;">
+        <label for="rounding">Decimals to round to</label><br><br>
+
+    <button onclick="document.getElementById('outText').value = prettifySVG(document.getElementById('inText').value)">Submit</button><br><br>
+
+    OUTPUT:<br>
+    <textarea id="outText" rows="8" cols="100"></textarea>
+</body>
+
+</html>
