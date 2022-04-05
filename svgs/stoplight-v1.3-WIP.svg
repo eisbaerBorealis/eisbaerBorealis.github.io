@@ -1,0 +1,189 @@
+<svg id="stoplight-svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+
+    <!-- <rect id="background" width="100%" height="100%" fill="#00cc00" /> -->
+    <rect id="background" width="100%" height="100%" fill="#07008a" />
+
+    <defs>
+        <radialGradient id="redGlow">
+            <stop offset="5%" stop-color="#ff8888aa" />
+            <stop offset="100%" stop-color="#ff888800" />
+        </radialGradient>
+        <radialGradient id="yellowGlow">
+            <stop offset="5%" stop-color="#ffff88aa" />
+            <stop offset="100%" stop-color="#ffff8800" />
+        </radialGradient>
+        <radialGradient id="greenGlow">
+            <stop offset="5%" stop-color="#88ff88aa" />
+            <stop offset="100%" stop-color="#88ff8800" />
+        </radialGradient>
+
+        <radialGradient id="redSideGlow">
+            <stop offset="5%" stop-color="#ff8888aa" />
+            <stop offset="50%" stop-color="#ff8888aa" />
+            <stop offset="100%" stop-color="#ff888800" />
+        </radialGradient>
+        <radialGradient id="yellowSideGlow">
+            <stop offset="5%" stop-color="#ffff88aa" />
+            <stop offset="50%" stop-color="#ffff88aa" />
+            <stop offset="100%" stop-color="#ffff8800" />
+        </radialGradient>
+        <radialGradient id="greenSideGlow">
+            <stop offset="5%" stop-color="#88ff88aa" />
+            <stop offset="50%" stop-color="#88ff88aa" />
+            <stop offset="100%" stop-color="#88ff8800" />
+        </radialGradient>
+    </defs>
+
+    
+    <circle id="left-red-glow"    cx="200" cy="210" r="150" fill="url('#redSideGlow')" 
+    />
+    <circle id="left-yellow-glow" cx="200" cy="410" r="150" fill="url('#yellowSideGlow')" 
+    />
+    <circle id="left-green-glow"  cx="200" cy="610" r="150" fill="url('#greenSideGlow')" 
+    />
+
+    <circle id="right-red-glow"    cx="400" cy="210" r="150" fill="url('#redSideGlow')" 
+    />
+    <circle id="right-yellow-glow" cx="400" cy="410" r="150" fill="url('#yellowSideGlow')" 
+    />
+    <circle id="right-green-glow"  cx="400" cy="610" r="150" fill="url('#greenSideGlow')" 
+    />
+
+    <g id="stoplight-pieces" fill="#222222" stroke-width="0.5" stroke="#222222">
+    <!-- <g id="stoplight-pieces" fill="none" stroke-width="1px" stroke="#222"> -->
+        <rect x="288" y="0" width="24" height="62" />
+        <path d="M 238 85 A 90 90 0 0 1 361 85 z" />
+        <rect x="190" y="85" width="220" height="16" />
+        <rect x="165" y="101" width="270" height="615" />
+        <rect x="190" y="716" width="220" height="16" />
+
+        <!-- <g id="side-covers" fill="#444444" stroke="#444444"> -->
+        <g id="side-covers">
+            <path d="M 165 115
+                    v 151.02
+                    c 0 0 -6.09 0 -8.70 0
+                    q -14.98 -.11 -25.85 -6.41
+                    c -10.87 -6.29 -16.81 -20.37 -20.90 -33.78
+                    s -6.52 -27.15 -17.14 -35.95
+                    c -16.32 -13.52 -33.45 -16.87 -40.98 -32.60
+                    c -4.88 -10.19 -6.34 -15.25 -7.47 -23.96
+                    q -1.13 -8.71 .89 -18.32
+                    Z" />
+            <path d="M 165 315
+                    v 151.02
+                    c 0 0 -6.09 0 -8.70 0
+                    q -14.98 -.11 -25.85 -6.41
+                    c -10.87 -6.29 -16.81 -20.37 -20.90 -33.78
+                    s -6.52 -27.15 -17.14 -35.95
+                    c -16.32 -13.52 -33.45 -16.87 -40.98 -32.60
+                    c -4.88 -10.19 -6.34 -15.25 -7.47 -23.96
+                    q -1.13 -8.71 .89 -18.32
+                    Z" />
+            <path d="M 165 515
+                    v 151.02
+                    c 0 0 -6.09 0 -8.70 0
+                    q -14.98 -.11 -25.85 -6.41
+                    c -10.87 -6.29 -16.81 -20.37 -20.90 -33.78
+                    s -6.52 -27.15 -17.14 -35.95
+                    c -16.32 -13.52 -33.45 -16.87 -40.98 -32.60
+                    c -4.88 -10.19 -6.34 -15.25 -7.47 -23.96
+                    q -1.13 -8.71 .89 -18.32
+                    Z" />
+
+            <path d="M 435 115
+                    v 151.02
+                    c 0 0 6.09 0 8.70 0
+                    q 14.98 -.11 25.85 -6.41
+                    c 10.87 -6.29 16.81 -20.37 20.90 -33.78
+                    s 6.52 -27.15 17.14 -35.95
+                    c 16.32 -13.52 33.45 -16.87 40.98 -32.60
+                    c 4.88 -10.19 6.34 -15.25 7.47 -23.96
+                    q 1.13 -8.71 -.89 -18.32
+                    Z" />
+            <path d="M 435 315
+                    v 151.02
+                    c 0 0 6.09 0 8.70 0
+                    q 14.98 -.11 25.85 -6.41
+                    c 10.87 -6.29 16.81 -20.37 20.90 -33.78
+                    s 6.52 -27.15 17.14 -35.95
+                    c 16.32 -13.52 33.45 -16.87 40.98 -32.60
+                    c 4.88 -10.19 6.34 -15.25 7.47 -23.96
+                    q 1.13 -8.71 -.89 -18.32
+                    Z" />
+            <path d="M 435 515
+                    v 151.02
+                    c 0 0 6.09 0 8.70 0
+                    q 14.98 -.11 25.85 -6.41
+                    c 10.87 -6.29 16.81 -20.37 20.90 -33.78
+                    s 6.52 -27.15 17.14 -35.95
+                    c 16.32 -13.52 33.45 -16.87 40.98 -32.60
+                    c 4.88 -10.19 6.34 -15.25 7.47 -23.96
+                    q 1.13 -8.71 -.89 -18.32
+                    Z" />
+        </g>
+    </g>
+
+    <circle id="red-light"    cx="300" cy="210" r="90" fill="#660000" />
+    <circle id="yellow-light" cx="300" cy="410" r="90" fill="#666600" />
+    <circle id="green-light"  cx="300" cy="610" r="90" fill="#006600" />
+
+    <circle id="front-red-glow"    cx="300" cy="210" r="150" fill="url('#redGlow')" 
+    />
+    <circle id="front-yellow-glow" cx="300" cy="410" r="150" fill="url('#yellowGlow')" 
+    />
+    <circle id="front-green-glow"  cx="300" cy="610" r="150" fill="url('#greenGlow')" 
+    />
+
+    <!-- <g attributeName="opacity" dur="15s" repeatCount="indefinite">
+        <animate href="#front-green-glow"
+                keyTimes="0; 0.19; 0.20; 0.795; 0.805; 1"
+                values="1; 1; 0; 0; 1; 1" />
+        <animate href="#front-yellow-glow"
+                keyTimes="0; 0.195; 0.205; 0.39; 0.40; 1"
+                values="0; 0; 1; 1; 0; 0" />
+        <animate href="#front-red-glow"
+                keyTimes="0; 0.395; 0.405; 0.79; 0.80; 1"
+                values="0; 0; 1; 1; 0; 0" />
+    </g> -->
+
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite"
+            href="#front-red-glow"
+            keyTimes="0; 0.35; 0.35; 0.90; 0.90; 1"
+            values="0; 0; 1; 1; 0; 0" />
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite"
+            href="#front-yellow-glow"
+            keyTimes="0; 0.20; 0.20; 0.35; 0.35; 1"
+            values="0; 0; 1; 1; 0; 0" />
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite"
+            href="#front-green-glow"
+            keyTimes="0; 0.20; 0.20; 0.90; 0.90; 1"
+            values="1; 1; 0; 0; 1; 1" />
+
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite"
+            href="#left-red-glow"
+            keyTimes="0; 0.40; 0.40; 0.85; 0.85; 1"
+            values="1; 1; 0; 0; 1; 1" />
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite"
+            href="#left-yellow-glow"
+            keyTimes="0; 0.70; 0.70; 0.85; 0.85; 1"
+            values="0; 0; 1; 1; 0; 0" />
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite"
+            href="#left-green-glow"
+            keyTimes="0; 0.40; 0.40; 0.70; 0.70; 1"
+            values="0; 0; 1; 1; 0; 0" />
+
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite"
+            href="#right-red-glow"
+            keyTimes="0; 0.40; 0.40; 0.85; 0.85; 1"
+            values="1; 1; 0; 0; 1; 1" />
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite"
+            href="#right-yellow-glow"
+            keyTimes="0; 0.70; 0.70; 0.85; 0.85; 1"
+            values="0; 0; 1; 1; 0; 0" />
+    <animate attributeName="opacity" dur="15s" repeatCount="indefinite"
+            href="#right-green-glow"
+            keyTimes="0; 0.40; 0.40; 0.70; 0.70; 1"
+            values="0; 0; 1; 1; 0; 0" />
+</svg>
