@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+}
+
+#main-container, #options, #generate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+#options, #generate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#options {
+  height: 60px;
+}
+
+#generate {
+  height: 80px;
+}
+
+#control-container {
+  margin-top: 20px;
+}
