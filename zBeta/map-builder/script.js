@@ -3,6 +3,7 @@ var RATIO = 1.732;
 var mapWidth = 1;
 var slowMode = false;
 var hiddenGrid = false;
+var mapGenerated = false;
 
 (function() {
 	'use strict';
@@ -33,6 +34,7 @@ function startup() {
     </div> -->
     <button id="gen-btn" onclick="generateMap()">Generate Map</button>
     <button id="hide-btn" onclick="toggleGrid()">Hide Grid</button>
+    <button id="download-btn" onclick="downloadMap()" disabled="">Download Map</button>
   </div>
   `;
   
@@ -55,6 +57,11 @@ function generateMap() {
   generateMapBackground();
   generateGreenShapes();
   generateGrid();
+
+  if(!mapGenerated) {
+    mapGenerated = true;
+    document.getElementById('download-btn').disabled = false;
+  }
 }
 
 function generateMapBackground() {
@@ -91,6 +98,7 @@ function generateGreenShapes() {
 
     }
   }
+  greenShapesHTML += '\n';
   document.getElementById('svg-green').innerHTML = greenShapesHTML;
 }
   
@@ -137,4 +145,19 @@ function toggleGrid() {
 
   buttonText += ' Grid';
   document.getElementById('hide-btn').innerText = buttonText;
+}
+
+function downloadMap() {
+  let downloadText = document.getElementById('svg-container').innerHTML;
+  let gridStart = downloadText.indexOf('<g id="svg-grid"');
+  downloadText = downloadText.slice(0, gridStart) + '</svg>';
+  // console.log('\n\n  downloadText is:\n' + downloadText);
+
+  let element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadText));
+  element.setAttribute('download', 'map.svg');
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
 }

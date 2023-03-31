@@ -105,46 +105,60 @@ function generateTile0(xOffSet, yOffSet) {
         point6Y = 1 - point4Y;
       }
 
-      point1X += xOffSet;
-      point2X += xOffSet;
-      point3X += xOffSet;
-      point4X += xOffSet;
-      point5X += xOffSet;
-      point6X += xOffSet;
+      // point1X += xOffSet;
+      // point2X += xOffSet;
+      // point3X += xOffSet;
+      // point4X += xOffSet;
+      // point5X += xOffSet;
+      // point6X += xOffSet;
 
-      point1Y += yOffSet;
-      point2Y += yOffSet;
-      point3Y += yOffSet;
-      point4Y += yOffSet;
-      point5Y += yOffSet;
-      point6Y += yOffSet;
+      // point1Y += yOffSet;
+      // point2Y += yOffSet;
+      // point3Y += yOffSet;
+      // point4Y += yOffSet;
+      // point5Y += yOffSet;
+      // point6Y += yOffSet;
+
+      point1X = roundTo(point1X + xOffSet, 3);
+      point2X = roundTo(point2X + xOffSet, 3);
+      point3X = roundTo(point3X + xOffSet, 3);
+      point4X = roundTo(point4X + xOffSet, 3);
+      point5X = roundTo(point5X + xOffSet, 3);
+      point6X = roundTo(point6X + xOffSet, 3);
+
+      point1Y = roundTo(point1Y + yOffSet, 3);
+      point2Y = roundTo(point2Y + yOffSet, 3);
+      point3Y = roundTo(point3Y + yOffSet, 3);
+      point4Y = roundTo(point4Y + yOffSet, 3);
+      point5Y = roundTo(point5Y + yOffSet, 3);
+      point6Y = roundTo(point6Y + yOffSet, 3);
 
       let colorNums = [0, 1, 2, 3, 4, 5, 6, 7]
 
       let nextColorNum = colorNums.splice(Math.floor(Math.random() * colorNums.length), 1)[0];
       let nextColor = colorNames[nextColorNum];
-      returnHTML += `<polygon points="${point2X},${point2Y} ${point3X},${point3Y} ` +
-                    `${point4X},${point4Y}" style="fill:var(${nextColor});stroke-width:0"/>`;
+      returnHTML += `\n\t\t<polygon points="${point2X},${point2Y} ${point3X},${point3Y} ` +
+                    `${point4X},${point4Y}" style="fill:var(${nextColor});"/>`;
 
       nextColorNum = colorNums.splice(Math.floor(Math.random() * colorNums.length), 1)[0];
       nextColor = colorNames[nextColorNum];
-      returnHTML += `<polygon points="${point1X},${point1Y} ${point2X},${point2Y} ` +
-                    `${point3X},${point3Y}" style="fill:var(${nextColor});stroke-width:0"/>`;
+      returnHTML += `\n\t\t<polygon points="${point1X},${point1Y} ${point2X},${point2Y} ` +
+                    `${point3X},${point3Y}" style="fill:var(${nextColor});"/>`;
 
       nextColorNum = colorNums.splice(Math.floor(Math.random() * colorNums.length), 1)[0];
       nextColor = colorNames[nextColorNum];
-      returnHTML += `<polygon points="${point1X},${point1Y} ${point2X},${point2Y} ` +
-                    `${point5X},${point5Y}" style="fill:var(${nextColor});stroke-width:0"/>`;
+      returnHTML += `\n\t\t<polygon points="${point1X},${point1Y} ${point2X},${point2Y} ` +
+                    `${point5X},${point5Y}" style="fill:var(${nextColor});"/>`;
 
       nextColorNum = colorNums.splice(Math.floor(Math.random() * colorNums.length), 1)[0];
       nextColor = colorNames[nextColorNum];
-      returnHTML += `<polygon points="${point1X},${point1Y} ${point3X},${point3Y} ` +
-                    `${point6X},${point6Y}" style="fill:var(${nextColor});stroke-width:0"/>`;
+      returnHTML += `\n\t\t<polygon points="${point1X},${point1Y} ${point3X},${point3Y} ` +
+                    `${point6X},${point6Y}" style="fill:var(${nextColor});"/>`;
 
       nextColorNum = colorNums.splice(Math.floor(Math.random() * colorNums.length), 1)[0];
       nextColor = colorNames[nextColorNum];
-      returnHTML += `<polygon points="${point1X},${point1Y} ${point5X},${point5Y} ` +
-                    `${point6X},${point6Y}" style="fill:var(${nextColor});stroke-width:0"/>`;
+      returnHTML += `\n\t\t<polygon points="${point1X},${point1Y} ${point5X},${point5Y} ` +
+                    `${point6X},${point6Y}" style="fill:var(${nextColor});"/>`;
     }
   }
 
