@@ -1,0 +1,9 @@
+.theme-default {
+    --color-background: #eeeeee;
+    
+    --color-outer-walls: #006100;
+    --color-inner-walls: #7FBF7F;
+    --color-racks: #019595;
+    --color-other: #ccb333;
+    --color-area-fill: #cc0000;
+}

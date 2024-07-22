@@ -1,0 +1,116 @@
+/** Author: Jesse Howell
+ * 
+ *  
+ */
+
+html {
+    background-color: var(--color-background);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.unclickable {
+    pointer-events: none;
+}
+
+#svg-container {
+    /* height: 100%;
+    width: 100%; */
+    /* flex-grow: 1; */
+    position: absolute;
+}
+
+#header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    /* width: 250px; */
+    min-width: 150px;
+    height: 60px;
+    background: linear-gradient(to bottom, #bbbbbb, #666666);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding: 0px 15px 0px;
+}
+
+#controls-container {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.btn-control {
+    fill:url(#btnGradient);
+    stroke: #000000;
+    stroke-width: 1.5;
+}
+
+.icons {
+    stroke: #000000;
+    stroke-width: 3px;
+    fill: none;
+}
+
+#test-div {
+    display: none;
+    position: absolute;
+    margin: auto;
+    background-color: red;
+    width: 5px;
+    height: 5px;
+}
+
+.svg-outer {
+    stroke: var(--color-outer-walls);
+    stroke-width: 3;
+    fill: none;
+}
+
+.svg-inner {
+    stroke: var(--color-inner-walls);
+    stroke-width: 2;
+    fill: none;
+}
+
+.svg-racks {
+    stroke: var(--color-racks);
+    stroke-width: 1;
+    fill: none;
+    pointer-events: all;
+}
+
+.svg-other {
+    stroke: var(--color-other);
+    stroke-width: 1;
+    fill: none;
+    pointer-events: all;
+}
+
+.svg-area-hover {
+    fill: var(--color-area-fill);
+}
