@@ -38,19 +38,25 @@ body {
     position: absolute;
 }
 
+.svg-gray-rect {
+    background: linear-gradient(to bottom, #bbbbbb, #666666);
+    border-radius: 15px;
+}
+
 #header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 10px;
-    /* width: 250px; */
-    min-width: 150px;
+    width: 250px;
+    /* min-width: 150px; */
+    /* min-width: 250px; */
     height: 60px;
     background: linear-gradient(to bottom, #bbbbbb, #666666);
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
     font-family: "Courier Prime", monospace;
     font-weight: 400;
     font-style: normal;

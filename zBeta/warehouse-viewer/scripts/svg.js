@@ -38,14 +38,14 @@ function buildMapSVG() {
 
     // build svg and give full white background
     let svgHTML = '<svg id="svg-map" viewBox="0 0 ' + totalWidth + ' ' + totalHeight + '" height="' + totalHeight + '">\n';
-        svgHTML += '  <rect width="100%" height="100%" fill="#ffffff" />\n';
+        svgHTML += '  <rect width="100%" height="100%" fill="#ffffff" />';
     
     // add the "other"
     for(let i = 0; i < buildings.length; i++) {
         let otherAreas = buildings[i].parts.otherAreas;
         for(let j = 0; j < otherAreas.length; j++) {
             let area = otherAreas[j];
-            svgHTML += '  <rect class="svg-other" id="' + area.name + '" x="' + (area.startX + xOffsets[i]) + '"' +
+            svgHTML += '\n  <rect class="svg-other" id="' + area.name + '" x="' + (area.startX + xOffsets[i]) + '"' +
                     ' y="' + (area.startY + yOffsets[i]) + '" width="' + area.width + '" height="' + area.height + '" />';
         }
     }
@@ -139,14 +139,10 @@ function buildMapSVG() {
 }
 
 // super helpful: https://codepen.io/AmeliaBR/pen/MYbzwW
-function resizeSVG(dZoom) {
+function resizeSVG(dZoom, centerX, centerY) {
     console.log('  eisDEBUG: resizeSVG(), old zoom is ' + zoom);
     zoom = (zoom * dZoom).toFixed(2);
     console.log('    eisDEBUG: resizeSVG(), new zoom is ' + zoom);
-
-    let windowCenterX = (document.body.offsetWidth / 2).toFixed(0);
-    let windowCenterY = (document.body.offsetHeight / 2).toFixed(0);
-    console.log('      eisDEBUG: windowCenterX is ' + windowCenterX);
 
     let svgLeft = document.getElementById('svg-container').style.left;
     let svgTop = document.getElementById('svg-container').style.top;
@@ -154,16 +150,16 @@ function resizeSVG(dZoom) {
     let oldSVGY = Number(svgTop.substring(0,svgTop.length - 2));
     console.log('      eisDEBUG: oldSVGX is ' + oldSVGX);
 
-    let oldXDiff = windowCenterX - oldSVGX;
-    let oldYDiff = windowCenterY - oldSVGY;
+    let oldXDiff = centerX - oldSVGX;
+    let oldYDiff = centerY - oldSVGY;
     console.log('      eisDEBUG: oldXDiff is ' + oldXDiff);
 
     let newXDiff = (oldXDiff * dZoom).toFixed(0);
     let newYDiff = (oldYDiff * dZoom).toFixed(0);
     console.log('      eisDEBUG: newXDiff is ' + newXDiff);
     
-    let newSVGX = windowCenterX - newXDiff;
-    let newSVGY = windowCenterY - newYDiff;
+    let newSVGX = centerX - newXDiff;
+    let newSVGY = centerY - newYDiff;
     console.log('      eisDEBUG: newSVGX is ' + newSVGX);
     
     document.getElementById('svg-map').setAttribute('height', (origSvgHeight * zoom).toFixed(2));
@@ -181,12 +177,17 @@ function moveSVG(dX, dY) {
     document.getElementById('svg-container').style.top = svgTop + dY + 'px';
 }
 
-
-
 function buildControlsSVG() {
     let sqrtTwo = Math.sqrt(2);
 
-    svgHTML = '<svg id="svg-controls" height="220" width="220">'
+    svgHTML = '<svg id="btn-download" class="clickable svg-gray-rect" height="60" width="60">';
+
+    svgHTML += '<image x="10" y="10" width="40" height="40" href="assets/download-svgrepo-com.svg" />';
+
+    svgHTML += '</svg>';
+
+
+    svgHTML += '<svg id="svg-controls" height="220" width="220">';
 
     svgHTML += '<defs><linearGradient id="btnGradient" x1="0" x2="0" y1="0" y2="1">\n' +
             '<stop offset="0%"   stop-color="#bbbbbb" stop-opacity="1"/>\n' +
@@ -251,4 +252,28 @@ function buildControlsSVG() {
 
     svgHTML += '</svg>';
     return svgHTML;
+}
+
+function downloadSVG() {
+    let svgText = `<svg id="svg-map" viewBox="0 0 836 520" height="520">
+  <style>
+    .svg-outer {stroke: #006100; stroke-width: 3; fill: none;}
+    .svg-inner {stroke: #7FBF7F; stroke-width: 2; fill: none;}
+    .svg-racks {stroke: #019595; stroke-width: 1; fill: none;}
+    .svg-other {stroke: #ccb333; stroke-width: 1; fill: none;}
+  </style>`;
+    svgText += document.getElementById('svg-map').innerHTML;
+    svgText += `</svg>`;
+
+
+    let fileName = 'lakanto-warehouses.svg';
+
+    let blob = new Blob([svgText], {type: 'text/plain' });
+    let link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = fileName;
+
+    link.click();
+
+    URL.revokeObjectURL(link.href);
 }

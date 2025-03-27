@@ -1,3 +1,6 @@
+var isClicked = false;
+var prevX, prevY;
+
 (function() {
     'use strict';
 
@@ -16,7 +19,7 @@ function startup() {
     addSVG();
 
     buildControls();
-
+z
     addListeners();
 }
 
@@ -29,9 +32,6 @@ function addSVG() {
 function buildControls() {
     console.log('  eisDEBUG: buildControls() started');
 
-    // document.getElementById('controls-container').insertAdjacentHTML('beforeend', '')
-
-    // document.getElementById('controls-container').innerHTML = buildControlsSVG();
     document.getElementById('controls-container').insertAdjacentHTML('beforeend', buildControlsSVG())
     
     console.log('  eisDEBUG: buildControls() completed');
@@ -40,65 +40,75 @@ function buildControls() {
 function addListeners() {
     console.log('  eisDEBUG: addListeners() started');
 
-    document.getElementById('btn-right').addEventListener('click', clickRight);
-    document.getElementById('btn-left').addEventListener('click', clickLeft);
-    document.getElementById('btn-up').addEventListener('click', clickUp);
-    document.getElementById('btn-down').addEventListener('click', clickDown);
-    document.getElementById('btn-zoom-in').addEventListener('click', clickZoomIn);
-    document.getElementById('btn-zoom-out').addEventListener('click', clickZoomOut);
+    document.getElementById('btn-right').addEventListener('click', (event) => {moveSVG(-25, 0);});
+    document.getElementById('btn-left').addEventListener('click', (event) => {moveSVG(25, 0);});
+    document.getElementById('btn-up').addEventListener('click', (event) => {moveSVG(0, 25);});
+    document.getElementById('btn-down').addEventListener('click', (event) => {moveSVG(0, -25);});
+    document.getElementById('btn-zoom-in').addEventListener('click', (event) => {
+        let windowCenterX = (document.body.offsetWidth / 2).toFixed(0);
+        let windowCenterY = (document.body.offsetHeight / 2).toFixed(0);
+        resizeSVG(1.1, windowCenterX, windowCenterY);
+    });
+    document.getElementById('btn-zoom-out').addEventListener('click', (event) => {
+        let windowCenterX = (document.body.offsetWidth / 2).toFixed(0);
+        let windowCenterY = (document.body.offsetHeight / 2).toFixed(0);
+        resizeSVG(1 / 1.1, windowCenterX, windowCenterY);
+    });
+    document.getElementById('btn-download').addEventListener('click', (event) => {downloadSVG();});
 
     let racks = document.getElementsByClassName('svg-racks');
     console.log('    eisDEBUG: racks.length is ' + racks.length);
     for(let i = 0; i < racks.length; i++) {
-        racks[i].addEventListener('mouseenter', mouseEnterLocation);
-        racks[i].addEventListener('mouseleave', mouseLeaveLocation);
-
+        racks[i].addEventListener('mouseenter', (event) => {
+            racks[i].classList.add('svg-area-hover');
+            document.getElementById('header').innerHTML = racks[i].id;
+        });
+        racks[i].addEventListener('mouseleave', (event) => {
+            racks[i].classList.remove('svg-area-hover');
+            document.getElementById('header').innerHTML = '';
+        });
     }
 
     let otherAreas = document.getElementsByClassName('svg-other');
-    // console.log('    eisDEBUG: racks.length is ' + racks.length);
     for(let i = 0; i < otherAreas.length; i++) {
-        otherAreas[i].addEventListener('mouseenter', mouseEnterLocation);
-        otherAreas[i].addEventListener('mouseleave', mouseLeaveLocation);
+        otherAreas[i].addEventListener('mouseenter', (event) => {
+            otherAreas[i].classList.add('svg-area-hover');
+            document.getElementById('header').innerHTML = otherAreas[i].id;
+        });
+        otherAreas[i].addEventListener('mouseleave', (event) => {
+            otherAreas[i].classList.remove('svg-area-hover');
+            document.getElementById('header').innerHTML = '';
+        });
     }
 
+    document.addEventListener('wheel', (event) => {
+        if(event.deltaY > 0) {
+            resizeSVG(1 / 1.1, event.clientX, event.clientY);
+        } else if(event.deltaY < 0) {
+            resizeSVG(1.1, event.clientX, event.clientY);
+        }
+        console.log('  eisDEBUG: clientX is ' + event.clientX);
+    });
+
+    document.addEventListener('mousedown', (event) => {
+        isClicked = true;
+        prevX = event.clientX;
+        prevY = event.clientY;
+    });
+
+    document.addEventListener('mouseup', (event) => {
+        isClicked = false;
+    });
+
+    document.addEventListener('mousemove', (event) => {
+        if(isClicked) {
+            let currX = event.clientX;
+            let currY = event.clientY;
+            moveSVG(currX - prevX , currY - prevY);
+            prevX = currX;
+            prevY = currY;
+        }
+    });
+
     console.log('  eisDEBUG: addListeners() ended');
-}
-
-function clickRight() {
-    moveSVG(-25, 0);
-}
-
-function clickLeft() {
-    moveSVG(25, 0);
-}
-
-function clickUp() {
-    moveSVG(0, 25);
-}
-
-function clickDown() {
-    moveSVG(0, -25);
-}
-
-function clickZoomIn() {
-    console.log('eisDEBUG: clickZoomIn()');
-    resizeSVG(1.1);
-}
-
-function clickZoomOut() {
-    console.log('eisDEBUG: clickZoomOut()');
-    resizeSVG(1 / 1.1);
-}
-
-function mouseEnterLocation(event) {
-    // console.log('TEST - mouseEnterLocation for ID ' + event.srcElement.id);
-    event.srcElement.classList.add('svg-area-hover');
-    document.getElementById('header').innerHTML = event.srcElement.id;
-}
-
-function mouseLeaveLocation(event) {
-    // console.log('TEST - mouseLeaveLocation for ID ' + event.srcElement.id);
-    event.srcElement.classList.remove('svg-area-hover');
-    document.getElementById('header').innerHTML = '';
 }
