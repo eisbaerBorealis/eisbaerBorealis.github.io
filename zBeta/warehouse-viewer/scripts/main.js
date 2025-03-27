@@ -19,7 +19,7 @@ function startup() {
     addSVG();
 
     buildControls();
-z
+
     addListeners();
 }
 
