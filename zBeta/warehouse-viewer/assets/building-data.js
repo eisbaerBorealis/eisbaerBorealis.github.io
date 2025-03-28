@@ -23,9 +23,17 @@ var buildings = [
                505, 180],
               [538, 0,
                538, 30,
-               724, 30,
-               724, 0,
-               724, 180],
+               686, 30,
+               686, 0,
+               686, 180],
+               [241.6, 20.4,
+                249.5, 20.4],
+               [258.6, 20.4,
+                266.5, 20.4],
+               [241.6, 150.8,
+                249.5, 150.8],
+               [258.6, 150.8,
+                266.5, 150.8],
           ],
           'racking' : {
               'width' : 4.1,
@@ -402,6 +410,78 @@ var buildings = [
                       'levelCount' : 5,
                       'firstBin' : 30
                   },
+                  {
+                      'name' : '2A08',
+                      'startX' : 750,
+                      'startY' : 2,
+                      'binCount' : 20,
+                      'levelCount' : 5,
+                      'firstBin' : 38
+                  },
+                  {
+                      'name' : '2A07',
+                      'startX' : 737,
+                      'startY' : 18.4,
+                      'binCount' : 16,
+                      'levelCount' : 5,
+                      'firstBin' : 34
+                  },
+                  {
+                      'name' : '2A06',
+                      'startX' : 733,
+                      'startY' : 18.4,
+                      'binCount' : 16,
+                      'levelCount' : 5,
+                      'firstBin' : 34
+                  },
+                  {
+                      'name' : '2A05',
+                      'startX' : 720,
+                      'startY' : 18.4,
+                      'binCount' : 26,
+                      'levelCount' : 5,
+                      'firstBin' : 34
+                  },
+                  {
+                      'name' : '2A04',
+                      'startX' : 716,
+                      'startY' : 18.4,
+                      'binCount' : 26,
+                      'levelCount' : 5,
+                      'firstBin' : 34
+                  },
+                  {
+                      'name' : '2A03',
+                      'startX' : 704,
+                      'startY' : 18.4,
+                      'binCount' : 26,
+                      'levelCount' : 5,
+                      'firstBin' : 34
+                  },
+                  {
+                      'name' : '2A02',
+                      'startX' : 700,
+                      'startY' : 18.4,
+                      'binCount' : 26,
+                      'levelCount' : 5,
+                      'firstBin' : 34
+                  },
+                  {
+                      'name' : '2A01',
+                      'startX' : 687,
+                      'startY' : 2,
+                      'binCount' : 38,
+                      'levelCount' : 5,
+                      'firstBin' : 38
+                  },
+                  {
+                      'name' : '2B02',
+                      'startX' : 681,
+                      'startY' : 38,
+                      'binCount' : 28,
+                      'levelCount' : 5,
+                      'firstBin' : 28
+                  },
               ]
           },
           'otherAreas' : [
@@ -531,456 +611,651 @@ var buildings = [
                   'width' : 6,
                   'height' : 107
               },
-              {
-                  'name' : '2CNSHP01',
-                  'startX' : 546,
-                  'startY' : 61, // was 45
-                  'width' : 7.5,
-                  'height' : 107
-              },
-              {
-                  'name' : '2CNSHP02',
-                  'startX' : 553.5,
-                  'startY' : 61,
-                  'width' : 7.5,
-                  'height' : 107
-              },
+            //   {
+            //       'name' : '2CNSHP01',
+            //       'startX' : 546,
+            //       'startY' : 61,
+            //       'width' : 7.5,
+            //       'height' : 107
+            //   },
+            //   {
+            //       'name' : '2CNSHP02',
+            //       'startX' : 553.5,
+            //       'startY' : 61,
+            //       'width' : 7.5,
+            //       'height' : 107
+            //   },
+//////////
               {
                   'name' : '2CNSHP03',
-                  'startX' : 561,
+                  'startX' : 552,
                   'startY' : 61,
-                  'width' : 7.5,
-                  'height' : 107
+                  'width' : 4.1,
+                  'height' : 91
               },
               {
                   'name' : '2CNSHP04',
-                  'startX' : 568.5,
+                  'startX' : 556.1,
                   'startY' : 61,
-                  'width' : 7.5,
-                  'height' : 107
+                  'width' : 4.1,
+                  'height' : 91
               },
               {
                   'name' : '2CNSHP05',
-                  'startX' : 576,
+                  'startX' : 560.2,
                   'startY' : 61,
-                  'width' : 7.5,
-                  'height' : 107
+                  'width' : 4.1,
+                  'height' : 91
               },
               {
                   'name' : '2CNSHP06',
-                  'startX' : 583.5,
+                  'startX' : 564.3,
                   'startY' : 61,
-                  'width' : 7.5,
+                  'width' : 4.1,
                   'height' : 91
               },
               {
                   'name' : '2CNSHP07',
-                  'startX' : 591,
+                  'startX' : 568.4,
                   'startY' : 61,
-                  'width' : 7.5,
+                  'width' : 4.1,
                   'height' : 91
               },
               {
                   'name' : '2CNSHP08',
-                  'startX' : 598.5,
+                  'startX' : 572.5,
                   'startY' : 61,
-                  'width' : 7.5,
+                  'width' : 4.1,
                   'height' : 91
               },
               {
                   'name' : '2CNSHP09',
-                  'startX' : 606,
+                  'startX' : 576.6,
                   'startY' : 61,
-                  'width' : 7.5,
+                  'width' : 4.1,
                   'height' : 91
               },
               {
                   'name' : '2CNSHP10',
-                  'startX' : 613.5,
+                  'startX' : 580.7,
                   'startY' : 61,
-                  'width' : 7.5,
+                  'width' : 4.1,
                   'height' : 91
               },
               {
                   'name' : '2CNSHP11',
-                  'startX' : 621,
+                  'startX' : 584.8,
                   'startY' : 61,
-                  'width' : 7.5,
+                  'width' : 4.1,
                   'height' : 91
               },
               {
                   'name' : '2CNSHP12',
-                  'startX' : 628.5,
+                  'startX' : 588.9,
                   'startY' : 61,
-                  'width' : 7.5,
+                  'width' : 4.1,
                   'height' : 91
               },
+//////////
               {
-                  'name' : '2AMZKIT4',
-                  'startX' : 546,
+                  'name' : '2AMZKIT8',
+                  'startX' : 543.8,
                   'startY' : 45,
-                  'width' : 7.5,
+                  'width' : 4.1,
                   'height' : 16
               },
               {
-                  'name' : '2AMZKIT3',
-                  'startX' : 553.5,
+                  'name' : '2AMZKIT7',
+                  'startX' : 547.9,
                   'startY' : 45,
-                  'width' : 7.5,
+                  'width' : 4.1,
                   'height' : 16
               },
               {
-                  'name' : '2AMZKIT2',
-                  'startX' : 561,
+                  'name' : '2AMZKIT6',
+                  'startX' : 552,
                   'startY' : 45,
-                  'width' : 7.5,
-                  'height' : 16
-              },
-              {
-                  'name' : '2AMZKIT1',
-                  'startX' : 568.5,
-                  'startY' : 45,
-                  'width' : 7.5,
-                  'height' : 16
-              },
-              {
-                  'name' : 'WRKPLACE',
-                  'startX' : 576,
-                  'startY' : 45,
-                  'width' : 22.5,
+                  'width' : 4.1,
                   'height' : 16
               },
               {
                   'name' : '2AMZKIT5',
-                  'startX' : 542,
+                  'startX' : 556.1,
                   'startY' : 45,
-                  'width' : 4,
+                  'width' : 4.1,
+                  'height' : 16
+              },
+              {
+                  'name' : '2AMZKIT4',
+                  'startX' : 560.2,
+                  'startY' : 45,
+                  'width' : 4.1,
+                  'height' : 16
+              },
+              {
+                  'name' : '2AMZKIT3',
+                  'startX' : 564.3,
+                  'startY' : 45,
+                  'width' : 4.1,
+                  'height' : 16
+              },
+              {
+                  'name' : '2AMZKIT2',
+                  'startX' : 568.4,
+                  'startY' : 45,
+                  'width' : 4.1,
+                  'height' : 16
+              },
+              {
+                  'name' : '2AMZKIT1',
+                  'startX' : 572.5,
+                  'startY' : 45,
+                  'width' : 4.1,
+                  'height' : 16
+              },
+//////////
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 65,
+                  'width' : 12,
                   'height' : 4
               },
               {
-                  'name' : '2AMZKIT6',
-                  'startX' : 542,
-                  'startY' : 49,
-                  'width' : 4,
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 69,
+                  'width' : 12,
                   'height' : 4
               },
               {
-                  'name' : '2AMZKIT7',
-                  'startX' : 542,
-                  'startY' : 53,
-                  'width' : 4,
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 73,
+                  'width' : 12,
                   'height' : 4
               },
               {
-                  'name' : '2AMZKIT8',
-                  'startX' : 542,
-                  'startY' : 57,
-                  'width' : 4,
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 77,
+                  'width' : 12,
                   'height' : 4
               },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 81,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 85,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 89,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 93,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 97,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 101,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 105,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 109,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 113,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 117,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 121,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 125,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 129,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 133,
+                  'width' : 12,
+                  'height' : 4
+              },
+              {
+                  'name' : '2CAMSHP1',
+                  'startX' : 540,
+                  'startY' : 137,
+                  'width' : 12,
+                  'height' : 4
+              },
+//////////
+              {
+                'name' : '2CAMSHP1',
+                'startX' : 540,
+                'startY' : 141,
+                'width' : 4,
+                'height' : 11
+            },
+            {
+                'name' : '2CAMSHP1',
+                'startX' : 544,
+                'startY' : 141,
+                'width' : 4,
+                'height' : 11
+            },
+            {
+                'name' : '2CAMSHP1',
+                'startX' : 548,
+                'startY' : 141,
+                'width' : 4,
+                'height' : 11
+            },
+//////////
               {
                   'name' : '2CSSHP21',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 61,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP20',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 65.33,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP19',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 69.67,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP18',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 74,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP17',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 78.33,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP16',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 82.67,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP15',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 87,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP14',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 91.33,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP13',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 95.67,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP12',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 100,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP11',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 104.33,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP10',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 108.67,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP09',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 113,
-                  'width' : 12,
+                  'width' : 14,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP08',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 117.33,
-                  'width' : 8,
+                  'width' : 14,
                   'height' : 4.34
               },
-              {
-                  'name' : '2CSSHP07',
-                  'startX' : 636,
-                  'startY' : 121.67,
-                  'width' : 5,
-                  'height' : 4.33
-              },
+            //   {
+            //       'name' : '2CSSHP07',
+            //       'startX' : 593,
+            //       'startY' : 121.67,
+            //       'width' : 5,
+            //       'height' : 4.33
+            //   },
               {
                   'name' : '2CSSHP06',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 126,
                   'width' : 5,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP05',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 130.33,
                   'width' : 5,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP04',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 134.67,
                   'width' : 5,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP03',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 139,
                   'width' : 5,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP02',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 143.33,
                   'width' : 5,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP01',
-                  'startX' : 636,
+                  'startX' : 593,
                   'startY' : 147.67,
                   'width' : 5,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP35',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 61,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP34',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 65.33,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP33',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 69.67,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP32',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 74,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP31',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 78.33,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP30',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 82.67,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP29',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 87,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP28',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 91.33,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP27',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 95.67,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP26',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 100,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP25',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 104.33,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.34
               },
               {
                   'name' : '2CSSHP24',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 108.67,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP23',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 113,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.33
               },
               {
                   'name' : '2CSSHP22',
-                  'startX' : 656,
+                  'startX' : 617,
                   'startY' : 117.33,
-                  'width' : 14,
+                  'width' : 16.7,
                   'height' : 4.34
               },
-              
-              {
-                  'name' : '2B01[A-C][011-019]',
-                  'startX' : 678,
-                  'startY' : 78.33,
-                  'width' : 12,
-                  'height' : 43.33
-              },
-              
-              {
-                  'name' : '2B01D[01-02]',
-                  'startX' : 695,
-                  'startY' : 95.67,
-                  'width' : 5,
-                  'height' : 8.66
-              },
-              {
-                  'name' : '2B01D[03-04]',
-                  'startX' : 695,
-                  'startY' : 104.33,
-                  'width' : 5,
-                  'height' : 8.67
-              },
-              {
-                  'name' : '2B01D[05-06]',
-                  'startX' : 695,
-                  'startY' : 113,
-                  'width' : 5,
-                  'height' : 8.66
-              },
-              {
-                  'name' : '2KITSTG1',
-                  'startX' : 591,
-                  'startY' : 31.5,
-                  'width' : 7.5,
-                  'height' : 7.5
-              },
-              {
-                  'name' : '2KITSTG1',
-                  'startX' : 613.5,
-                  'startY' : 31.5,
-                  'width' : 7.5,
-                  'height' : 7.5
-              },
-              {
-                  'name' : '2KITSTG1',
-                  'startX' : 648,
-                  'startY' : 31.5,
-                  'width' : 7.5,
-                  'height' : 7.5
-              },
-              {
-                  'name' : '2KITSTG1',
-                  'startX' : 640.5,
-                  'startY' : 53.5,
-                  'width' : 7.5,
-                  'height' : 7.5
-              },
+//////////
+            {
+                'name' : '2B01[A-C][011-019]',
+                'startX' : 646,
+                'startY' : 62,
+                'width' : 8,
+                'height' : 8.2
+            },
+            {
+                'name' : '2B01[A-C][011-019]',
+                'startX' : 646,
+                'startY' : 70.2,
+                'width' : 8,
+                'height' : 8.2
+            },
+            {
+                'name' : '2B01[A-C][011-019]',
+                'startX' : 646,
+                'startY' : 78.4,
+                'width' : 8,
+                'height' : 8.2
+            },
+            {
+                'name' : '2B01[A-C][011-019]',
+                'startX' : 646,
+                'startY' : 86.6,
+                'width' : 8,
+                'height' : 8.2
+            },
+            {
+                'name' : '2B01[A-C][011-019]',
+                'startX' : 646,
+                'startY' : 94.8,
+                'width' : 8,
+                'height' : 8.2
+            },
+            {
+                'name' : '2B01[A-C][011-019]',
+                'startX' : 646,
+                'startY' : 103,
+                'width' : 8,
+                'height' : 8.2
+            },
+            {
+                'name' : '2B01[A-C][011-019]',
+                'startX' : 646,
+                'startY' : 111.2,
+                'width' : 8,
+                'height' : 8.2
+            },
+            // {
+            //     'name' : '2B01[A-C][011-019]',
+            //     'startX' : 646,
+            //     'startY' : 119.4,
+            //     'width' : 8,
+            //     'height' : 8.2
+            // },
+//////////
+            {
+                'name' : '2B01A078',
+                'startX' : 654,
+                'startY' : 109,
+                'width' : 4,
+                'height' : 4
+            },
+            {
+                'name' : '2B01A077',
+                'startX' : 654,
+                'startY' : 113,
+                'width' : 4,
+                'height' : 4
+            },
+            {
+                'name' : '2B01A076',
+                'startX' : 654,
+                'startY' : 117,
+                'width' : 4,
+                'height' : 4
+            },
+            {
+                'name' : '2B01A074',
+                'startX' : 654,
+                'startY' : 121,
+                'width' : 4,
+                'height' : 4
+            },
+            {
+                'name' : '2B01A073',
+                'startX' : 654,
+                'startY' : 125,
+                'width' : 4,
+                'height' : 4
+            },
+            {
+                'name' : '2B01A072',
+                'startX' : 654,
+                'startY' : 129,
+                'width' : 4,
+                'height' : 4
+            },
+//////////
               {
                   'name' : 'WORKSTG1',
                   'startX' : 504,
@@ -1032,6 +1307,27 @@ var buildings = [
               },
               {
                   'name' : 'WORKSTG8',
+                  'startX' : 530.25,
+                  'startY' : 2,
+                  'width' : 3.75,
+                  'height' : 10
+              },
+              {
+                  'name' : 'WORKSTG',
+                  'startX' : 530.25,
+                  'startY' : 2,
+                  'width' : 4.5,
+                  'height' : 4.5
+              },
+              {
+                  'name' : 'WORKSTG',
+                  'startX' : 530.25,
+                  'startY' : 2,
+                  'width' : 4.5,
+                  'height' : 4.5
+              },
+              {
+                  'name' : 'WORKSTG',
                   'startX' : 530.25,
                   'startY' : 2,
                   'width' : 3.75,
