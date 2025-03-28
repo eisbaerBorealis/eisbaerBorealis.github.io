@@ -1314,24 +1314,24 @@ var buildings = [
               },
               {
                   'name' : 'WORKSTG',
-                  'startX' : 530.25,
+                  'startX' : 467,
                   'startY' : 2,
                   'width' : 4.5,
                   'height' : 4.5
               },
               {
                   'name' : 'WORKSTG',
-                  'startX' : 530.25,
+                  'startX' : 471.5,
                   'startY' : 2,
                   'width' : 4.5,
                   'height' : 4.5
               },
               {
                   'name' : 'WORKSTG',
-                  'startX' : 530.25,
+                  'startX' : 476,
                   'startY' : 2,
-                  'width' : 3.75,
-                  'height' : 10
+                  'width' : 4.5,
+                  'height' : 4.5
               },
           ],
           'zones' : [
